@@ -92,11 +92,9 @@
     .step-list li { display: grid; grid-template-columns: 46px minmax(0, 1fr); gap: 17px; align-items: start; font-size: clamp(19px, 2vw, 29px); line-height: 1.35; }
     .step-list .num { display: grid; place-items: center; width: 43px; height: 43px; border-radius: 50%; background: #126f98; color: white; font-size: 21px; font-weight: 800; }
     .muted { color: var(--muted); }
-    .notes { display: none; }
-    body.show-notes .slide.active .notes { display: block; position: fixed; right: 18px; bottom: 84px; width: min(460px, 42vw); max-height: 60vh; overflow: auto; background: #102b42f2; color: #f4f9fc; border-radius: 14px; padding: 16px 20px; font-size: 16px; line-height: 1.45; box-shadow: 0 18px 36px #0005; z-index: 10; }
-    .notes ul { margin: 0; padding-left: 18px; }
-    .notes li + li { margin-top: 6px; }
-    .notes strong { display: block; margin-bottom: 8px; letter-spacing: .1em; font-size: 12px; text-transform: uppercase; color: #9fd7ea; }
+
+
+
     .aside { border-left: 4px solid var(--orange); padding: 10px 0 10px 22px; font-size: clamp(17px, 1.6vw, 23px); line-height: 1.42; color: #704014; }
     .prompt { border: 1px solid #a8cddd; background: #e8f5fa; padding: clamp(18px, 2vw, 28px); border-radius: 18px; font-size: clamp(18px, 1.8vw, 27px); line-height: 1.44; }
     .prompt-label { display: block; color: var(--cyan); font-size: clamp(12px, 1vw, 17px); font-weight: 800; text-transform: uppercase; letter-spacing: .13em; margin-bottom: 12px; }
@@ -120,7 +118,7 @@
       #welcome .welcome-qr { width: 140px; margin-bottom: 2px; }
       #welcome .tag { margin-bottom: 3px; }
     }
-    @media print { .notes { display: none !important; } html, body { background: white; } .deck { display: block; } .slide, .slide.active { display: flex; height: 7.5in; min-height: 0; width: 100%; padding: .55in .65in; page-break-after: always; gap: .2in; } .controls, .welcome-video { display: none; } .welcome-hero { display: block; } .card, .prompt { box-shadow: none; } h1 { font-size: 52pt; } h2 { font-size: 42pt; } }
+    @media print {
   </style>
 </head>
 <body>
@@ -153,12 +151,6 @@
           <p>Fictional demo materials. Trying the data yourself requires your own authorized Snowflake access.</p>
         </div>
       </div>
-      <aside class="notes"><strong>Speaker notes</strong><ul>
-        <li>"Welcome to I Downloaded CoCo Desktop... Now What?"</li>
-        <li>"My name is Caleb Alexander, Account Engineer at Snowflake."</li>
-        <li>"If you've downloaded CoCo, opened it, and thought, okay... now what? You're in the right place. Today is about getting comfortable with the app: where things live, how it works, and how to get your first real task done with confidence."</li>
-        <li>"If you haven't downloaded CoCo yet, scan this QR or use the link. The second QR is the GitHub repo we'll use for today's PawCore example."</li>
-      </ul></aside>
     </section>
 
     <section class="slide" id="purpose" aria-label="Slide 2: Why we're here">
@@ -170,11 +162,6 @@
         <div class="card"><h3>Leave with a pattern</h3><p>Ask a focused question, inspect the action, verify the evidence, and refine the answer.</p></div>
       </div>
       <p class="foot">Today is a presenter-led first look, not a room-wide install session.</p>
-      <aside class="notes"><strong>Speaker notes</strong><ul>
-        <li>"We hear from a lot of customers, and internal users too, who download CoCo and dive headfirst into a specific use case."</li>
-        <li>"Today we're taking a step back to cover the foundations first."</li>
-        <li>"The goal is to get from a blank CoCo screen to an answer you can verify."</li>
-      </ul></aside>
     </section>
 
     <section class="slide" id="agenda" aria-label="Slide 3: Today's agenda">
@@ -187,11 +174,6 @@
         <li><span class="num">4</span><span>Hear Zach English of OneSix share his CoCo use cases at the end.</span></li>
         <li><span class="num">5</span><span>Bring your questions to the Q&amp;A.</span></li>
       </ol>
-      <aside class="notes"><strong>Speaker notes</strong><ul>
-        <li>"We'll cover where to get it, what access you need, and the first steps in Desktop."</li>
-        <li>"Then we'll use one small PawCore question to practice reviewing the evidence."</li>
-        <li>"Zach English will share his OneSix use cases at the end, followed by Q&amp;A."</li>
-      </ul></aside>
     </section>
 
     <section class="slide" id="series" aria-label="Slide 4: Continue the CoCo learning series">
@@ -205,11 +187,6 @@
         </div>
         <div class="series-scan"><a href="https://www.snowflake.com/en/webinars/?tags=content-type%2Flab-and-quickstart&amp;tags=region%2Famericas" target="_blank" rel="noopener noreferrer" aria-label="Browse Americas hands-on labs"><img class="series-qr" src="hands-on-labs-qr.png" alt="Scan to browse Snowflake Americas hands-on labs"></a><p>Scan to browse Americas hands-on labs. This is a listings page, not a direct registration link for all three sessions.</p></div>
       </div>
-      <aside class="notes"><strong>Speaker notes</strong><ul>
-        <li>"Today is Part 1. Part 2 on December 2 builds on this with repeatable work."</li>
-        <li>"If you want to go deeper on data engineering, Prompt to Pipeline runs November 17."</li>
-        <li>"Scan the QR to browse upcoming hands-on labs."</li>
-      </ul></aside>
     </section>
 
     <section class="slide" id="get-coco" aria-label="Slide 5: Get CoCo">
@@ -221,12 +198,6 @@
         <div class="card"><span class="tag">Also available</span><h3>CoCo in Snowsight</h3><p>Use CoCo in the browser, inside the Snowflake web interface.</p></div>
       </div>
       <p class="aside">A standard Snowflake trial is not the dedicated CoCo CLI trial. Today's lab uses Desktop only.</p>
-      <aside class="notes"><strong>Speaker notes</strong><ul>
-        <li>"This HOL is strictly about the Desktop app, but CoCo comes in three flavors."</li>
-        <li>"Desktop gives us a visual place to work with projects, conversations, and results."</li>
-        <li>"If you prefer a terminal, the CLI is an option; check setup and account eligibility separately. CoCo also runs in Snowsight in the browser."</li>
-        <li>"I'll show the download location, then move into the prepared app."</li>
-      </ul></aside>
     </section>
 
     <section class="slide" id="environment" aria-label="Slide 6: Prerequisites">
@@ -238,12 +209,6 @@
         <div class="card"><h3>Query access</h3><p>A usable warehouse and permission to read <code>PAWCORE_ANALYTICS.SUPPORT.SUPPORT_TICKETS</code>. The GitHub repo does not grant Snowflake access.</p></div>
       </div>
       <p class="aside">Self-service trial? An account admin must add a credit card to enable AI features.</p>
-      <aside class="notes"><strong>Speaker notes</strong><ul>
-        <li>"To repeat this yourself, you need Desktop, your own Snowflake sign-in, and an eligible active role."</li>
-        <li>"For the PawCore question, you also need a warehouse and permission to query the tickets table."</li>
-        <li>"The GitHub link provides materials, not access to a Snowflake account or its data."</li>
-        <li>"If you're on a self-service trial, check AI enablement with your account admin before trying the exercise."</li>
-      </ul></aside>
     </section>
 
     <section class="slide" id="pawcore" aria-label="Slide 7: The PawCore story">
@@ -266,12 +231,6 @@
       <figure class="pawcore-figure" style="margin:0"><img class="pawcore-sketch" src="smartcollar-sketch.png" alt="Design sketch of the PawCore SmartCollar and its components"></figure>
       </div>
       <p class="aside">Ticket counts can show where to look. We will check the result before calling it an answer, and we will not infer root cause from counts alone.</p>
-      <aside class="notes"><strong>Speaker notes</strong><ul>
-        <li>"PawCore Systems is our fictional pet wellness company. Its IoT devices monitor pet health in 15+ countries."</li>
-        <li>"Imagine a PawCore support lead asking which region needs attention for SmartCollar V2." (Point to the SmartCollar sketch.)</li>
-        <li>"We'll give CoCo a small amount of context: ticket region, priority, and status."</li>
-        <li>"The task is to find where support work is concentrated and what to investigate next. We won't assume the answer; we'll check what the data says."</li>
-      </ul></aside>
     </section>
 
     <section class="slide" id="review" aria-label="Slide 8: AI best practices">
@@ -283,12 +242,6 @@
         <div class="card"><h3>Check the claim</h3><p>Compare the answer with the actual result. Separate facts from guesses, then refine.</p></div>
       </div>
       <p class="foot">Ticket counts can show where to look. They cannot establish root cause on their own.</p>
-      <aside class="notes"><strong>Speaker notes</strong><ul>
-        <li>"Start by confirming the project, connection, role, and data you intend to use."</li>
-        <li>"Be specific in the request, and review proposed SQL or other actions before they run."</li>
-        <li>"Compare the response with the result, not just with what sounds plausible."</li>
-        <li>"Ticket volume tells us where to look; it does not tell us the root cause by itself."</li>
-      </ul></aside>
     </section>
 
     <section class="slide" id="dive-in" aria-label="Slide 9: Let's dive in">
@@ -296,10 +249,6 @@
       <h2>Let's dive in.</h2>
       <p class="lead">From first connection to a PawCore question: watch how the project, context, agent actions, and human review come together.</p>
       <p class="foot">Presenter-led demo. We will pause on the proposed action and check the evidence together.</p>
-      <aside class="notes"><strong>Speaker notes</strong><ul>
-        <li>"Enough slides. Let's switch to the app."</li>
-        <li>Switch to the VM window and start the Desktop tour.</li>
-      </ul></aside>
     </section>
 
     <section class="slide" id="questions" aria-label="Slide 10: Questions and next steps">
@@ -310,12 +259,6 @@
         <div class="card"><h3>Explore PawCore</h3><a class="link-large" href="https://github.com/calebaalexander/HandsOnLabs" target="_blank" rel="noopener noreferrer">Fictional data repo ↗</a><p class="url">github.com/calebaalexander/HandsOnLabs</p></div>
       </div>
       <p class="aside">Use your own authorized Snowflake access. Review setup scripts before running them, especially in a shared account.</p>
-      <aside class="notes"><strong>Speaker notes</strong><ul>
-        <li>"The pattern to take away is: connect, ask clearly, inspect the action, check the evidence, and refine."</li>
-        <li>"The download and PawCore links are here if you want to revisit the materials."</li>
-        <li>"Use an authorized account and review any setup scripts before running them."</li>
-        <li>"Let's move into questions."</li>
-      </ul></aside>
     </section>
 
     <nav class="controls" aria-label="Slide controls">
@@ -357,8 +300,6 @@
         } else if (event.key.toLowerCase() === 'f') {
           if (!document.fullscreenElement) document.documentElement.requestFullscreen?.();
           else document.exitFullscreen?.();
-        } else if (event.key.toLowerCase() === 'n') {
-          document.body.classList.toggle('show-notes');
         } else if (event.key.toLowerCase() === 'p' && !event.target.closest('a, button')) {
           window.print();
         }
