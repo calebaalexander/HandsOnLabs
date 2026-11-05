@@ -37,6 +37,15 @@ Materials for the **Cortex Code CLI and UI** hands-on labs (SmartCollar V2 launc
     └── Document_Stage/            # Customer reviews, support tickets, beta feedback
 ```
 
+### 3-CoCo-Desktop/
+Materials for **I Downloaded CoCo Desktop... Now What?** (Nov 10, 2026), a first look at the CoCo Desktop app using a PawCore support question. See the [folder README](3-CoCo-Desktop/).
+
+```
+3-CoCo-Desktop/
+└── slides/
+    └── index.html                 # Opening slides (open in a browser)
+```
+
 ## Quick Start — Cortex Code Labs
 
 ### Prerequisites

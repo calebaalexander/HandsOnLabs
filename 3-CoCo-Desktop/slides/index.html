@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="snowflake-source" content="cortex-agent-authored">
+  <title>I Downloaded CoCo Desktop... Now What? | Nov 10</title>
+  <script type="application/json" id="snowflake-report-metadata">
+  {
+    "generated": "2026-11-04",
+    "intent": "Audience-facing slides for the November 10 CoCo Desktop introduction",
+    "dataSources": [
+      {"type": "url", "url": "https://www.snowflake.com/webinars/i-downloaded-coco-desktop-now-what-webinar-20261110/", "purpose": "event promise"},
+      {"type": "url", "url": "https://www.snowflake.com/en/product/snowflake-coco/downloads/", "purpose": "official download"},
+      {"type": "url", "url": "https://github.com/calebaalexander/HandsOnLabs", "purpose": "fictional PawCore repository"},
+      {"type": "url", "url": "https://www.snowflake.com/webinars/prompt-to-pipeline-hands-on-data-engineering-with-cortex-code-20261117/", "purpose": "November 17 related hands-on lab"},
+      {"type": "url", "url": "https://www.snowflake.com/en/webinars/?tags=content-type%2Flab-and-quickstart&tags=region%2Famericas", "purpose": "filtered Americas hands-on lab listings; not a direct registration link for every event"},
+      {"type": "file", "path": "pawcore-welcome-transparent-v2.webm", "purpose": "muted looping cutout of the replacement PawCore video on the local welcome slide"},
+      {"type": "file", "path": "pawcore-github-qr.png", "purpose": "QR link to the PawCore GitHub repository on the welcome slide"},
+      {"type": "file", "path": "coco-download-qr.png", "purpose": "QR link to the official CoCo downloads page on the welcome slide"},
+      {"type": "file", "path": "hands-on-labs-qr.png", "purpose": "provided QR for browsing Americas hands-on labs"}
+    ],
+    "sections": [
+      {"id": "welcome", "title": "Welcome"},
+      {"id": "purpose", "title": "Why we're here"},
+      {"id": "agenda", "title": "Today's agenda"},
+      {"id": "series", "title": "Continue learning"},
+      {"id": "get-coco", "title": "Get CoCo"},
+      {"id": "environment", "title": "Prerequisites"},
+      {"id": "pawcore", "title": "The PawCore story"},
+      {"id": "review", "title": "AI best practices"},
+      {"id": "dive-in", "title": "Let's dive in"},
+      {"id": "questions", "title": "Questions and next steps"}
+    ]
+  }
+  </script>
+  <style>
+    :root { color-scheme: light; --ink: #102b42; --muted: #496479; --cyan: #08769a; --blue: #177eb2; --orange: #a95716; --line: #c4dbe7; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 100%; min-height: 100%; background: #f4f9fc; color: var(--ink); font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    body { background: radial-gradient(circle at 85% 4%, #d9f1fa 0, transparent 38%), linear-gradient(145deg, #fbfdff, #eaf5fb 65%, #f4f9fc); }
+    a { color: var(--cyan); text-underline-offset: 5px; overflow-wrap: anywhere; }
+    a:hover, a:focus-visible { color: #064d6c; }
+    button:focus-visible, a:focus-visible { outline: 3px solid var(--orange); outline-offset: 4px; }
+    .deck { min-height: 100vh; display: grid; grid-template-rows: 1fr auto; }
+    .slide { display: none; width: min(100%, 1440px); min-height: min(820px, calc(100vh - 74px)); padding: clamp(24px, 4vw, 66px) clamp(22px, 5.2vw, 82px); margin: auto; flex-direction: column; justify-content: center; gap: clamp(18px, 2.5vw, 32px); }
+    .slide.active { display: flex; }
+    .eyebrow { color: var(--cyan); font-size: clamp(13px, 1.2vw, 19px); letter-spacing: .16em; font-weight: 800; text-transform: uppercase; }
+    h1, h2, h3, p { margin: 0; }
+    h1 { font-size: clamp(42px, 6.3vw, 98px); line-height: 1.02; letter-spacing: -.05em; max-width: 1100px; }
+    h2 { font-size: clamp(36px, 5.2vw, 75px); line-height: 1.04; letter-spacing: -.045em; max-width: 1150px; }
+    h3 { font-size: clamp(21px, 2.2vw, 31px); line-height: 1.2; }
+    .lead { color: var(--muted); font-size: clamp(19px, 2.2vw, 31px); line-height: 1.35; max-width: 1000px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 315px), 1fr)); gap: clamp(14px, 2vw, 27px); width: 100%; }
+    .card { border: 1px solid var(--line); background: #ffffffee; border-radius: 20px; padding: clamp(18px, 2.1vw, 30px); box-shadow: 0 18px 36px #1e526616; min-width: 0; }
+    .card code, .prompt code, .step-list code { overflow-wrap: anywhere; word-break: break-word; }
+    .card p, .card li { color: #28475d; font-size: clamp(17px, 1.65vw, 24px); line-height: 1.42; }
+    .card p + p, .card h3 + p { margin-top: 12px; }
+    .card h3 { margin-bottom: 10px; }
+    .tag { display: inline-block; color: #064b65; background: #d4f0f8; padding: 6px 13px; border-radius: 100px; text-transform: uppercase; letter-spacing: .06em; font-weight: 800; font-size: clamp(12px, 1.15vw, 16px); margin-bottom: 16px; }
+    .link-large { display: block; font-size: clamp(19px, 2.1vw, 31px); font-weight: 700; margin: 8px 0 6px; }
+    .url { font-size: clamp(14px, 1.4vw, 20px) !important; color: var(--muted) !important; overflow-wrap: anywhere; }
+    .welcome-links { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: clamp(6px, 2vw, 30px); align-items: stretch; }
+    .welcome-links .card { display: flex; flex-direction: column; align-items: center; text-align: center; border-top: 4px solid var(--cyan); }
+    .welcome-links .card h3 { margin-bottom: 10px; }
+    .welcome-links .card .url { margin-bottom: 10px; }
+    .welcome-links .card > p:last-child { margin-top: auto; }
+    .welcome-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 43%); gap: clamp(18px, 3vw, 42px); align-items: center; }
+    .welcome-copy { display: grid; gap: clamp(14px, 2vw, 28px); }
+    .welcome-video { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: transparent; }
+    .welcome-qr { display: block; width: clamp(160px, 18vw, 220px); max-width: 100%; height: auto; margin: 0 auto 12px; image-rendering: pixelated; }
+    .pawcore-intro { display: flex; align-items: center; gap: clamp(14px, 2vw, 24px); }
+    .pawcore-logo { width: clamp(64px, 7vw, 100px); height: auto; flex: none; mix-blend-mode: multiply; }
+    .pawcore-about { margin-top: 6px; color: var(--muted); font-size: clamp(16px, 1.5vw, 21px); line-height: 1.4; max-width: 900px; }
+    .pawcore-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(220px, 34%); gap: clamp(18px, 3vw, 40px); align-items: center; }
+    .pawcore-main { display: flex; flex-direction: column; gap: clamp(14px, 2vw, 24px); min-width: 0; }
+    .pawcore-sketch { display: block; width: auto; max-width: 100%; max-height: 40vh; height: auto; margin: 0 auto; border-radius: 18px; box-shadow: 0 18px 36px #1e526626; }
+    #pawcore { gap: clamp(12px, 1.6vw, 22px); }
+    .pawcore-caption { margin-top: 8px; text-align: center; font-size: 14px; color: var(--muted); }
+    @media (max-width: 850px) { .pawcore-layout { grid-template-columns: 1fr; } .pawcore-figure { max-width: 380px; } }
+    .series-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(200px, 265px); gap: clamp(16px, 2vw, 32px); align-items: center; }
+    .series-events { display: grid; gap: 12px; }
+    .series-events .card { padding: clamp(14px, 1.5vw, 20px); }
+    .series-events .card p { font-size: clamp(16px, 1.35vw, 20px); }
+    .series-events .card h3 { font-size: clamp(20px, 1.85vw, 26px); }
+    .series-qr { display: block; width: min(100%, 230px); height: auto; margin: auto; image-rendering: pixelated; }
+    .series-scan { text-align: center; }
+    .series-scan p { margin-top: 12px; font-size: clamp(15px, 1.3vw, 19px); line-height: 1.35; color: var(--muted); }
+    .step-list { display: grid; gap: 15px; list-style: none; padding: 0; margin: 0; width: 100%; }
+    #agenda .step-list { gap: clamp(20px, 3.6vh, 36px); margin-top: clamp(10px, 2.5vh, 28px); }
+    #agenda .step-list li { align-items: center; }
+    .step-list li { display: grid; grid-template-columns: 46px minmax(0, 1fr); gap: 17px; align-items: start; font-size: clamp(19px, 2vw, 29px); line-height: 1.35; }
+    .step-list .num { display: grid; place-items: center; width: 43px; height: 43px; border-radius: 50%; background: #126f98; color: white; font-size: 21px; font-weight: 800; }
+    .muted { color: var(--muted); }
+    .notes { display: none; }
+    body.show-notes .slide.active .notes { display: block; position: fixed; right: 18px; bottom: 84px; width: min(460px, 42vw); max-height: 60vh; overflow: auto; background: #102b42f2; color: #f4f9fc; border-radius: 14px; padding: 16px 20px; font-size: 16px; line-height: 1.45; box-shadow: 0 18px 36px #0005; z-index: 10; }
+    .notes ul { margin: 0; padding-left: 18px; }
+    .notes li + li { margin-top: 6px; }
+    .notes strong { display: block; margin-bottom: 8px; letter-spacing: .1em; font-size: 12px; text-transform: uppercase; color: #9fd7ea; }
+    .aside { border-left: 4px solid var(--orange); padding: 10px 0 10px 22px; font-size: clamp(17px, 1.6vw, 23px); line-height: 1.42; color: #704014; }
+    .prompt { border: 1px solid #a8cddd; background: #e8f5fa; padding: clamp(18px, 2vw, 28px); border-radius: 18px; font-size: clamp(18px, 1.8vw, 27px); line-height: 1.44; }
+    .prompt-label { display: block; color: var(--cyan); font-size: clamp(12px, 1vw, 17px); font-weight: 800; text-transform: uppercase; letter-spacing: .13em; margin-bottom: 12px; }
+    .foot { font-size: clamp(15px, 1.4vw, 20px); color: var(--muted); }
+    .controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 12px clamp(18px, 4vw, 60px); border-top: 1px solid var(--line); background: #f5fbffef; min-height: 70px; }
+    .controls button { background: #e4f3fa; color: var(--ink); border: 1px solid #98bdce; border-radius: 9px; font-size: 17px; padding: 9px 16px; cursor: pointer; }
+    .controls button:disabled { opacity: .4; cursor: default; }
+    #count { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 17px; min-width: 80px; text-align: center; }
+    @media (max-width: 850px) { .welcome-hero { grid-template-columns: 1fr; } .welcome-video { max-width: 550px; } }
+    @media (max-width: 850px) { .series-layout { grid-template-columns: 1fr; } .series-scan { justify-self: center; } }
+    @media (max-width: 760px) { .welcome-links { grid-template-columns: 1fr; } }
+    @media (max-width: 700px) { .slide { min-height: calc(100vh - 70px); justify-content: flex-start; } .step-list li { grid-template-columns: 36px 1fr; gap: 10px; } .step-list .num { width: 34px; height: 34px; font-size: 17px; } }
+    @media (max-height: 820px) and (min-width: 851px) { .slide { padding-block: 22px; gap: 14px; } h1 { font-size: clamp(42px, 5vw, 72px); } h2 { font-size: clamp(34px, 4vw, 58px); } .card { padding: 16px 20px; } .card p { font-size: clamp(16px, 1.35vw, 20px); } .welcome-links { margin-top: 0; } .welcome-qr { width: clamp(130px, 12vw, 160px); margin-bottom: 6px; } .welcome-links .card h3 { margin-bottom: 5px; } .tag { margin-bottom: 8px; } .foot { font-size: 16px; } .prompt { padding: 16px 20px; font-size: clamp(16px, 1.5vw, 22px); } }
+    @media (max-height: 1000px) and (min-width: 851px) {
+      #welcome h1 { font-size: clamp(42px, 4.25vw, 61px); }
+      #welcome .lead { font-size: clamp(17px, 1.55vw, 22px); }
+      #welcome .welcome-copy { gap: 10px; }
+      #welcome .welcome-links .card { padding: 11px 16px; }
+      #welcome .welcome-links .card p { font-size: 15px; line-height: 1.3; }
+      #welcome .welcome-links .card .url { font-size: 13px !important; margin: 2px 0 5px; }
+      #welcome .welcome-qr { width: 140px; margin-bottom: 2px; }
+      #welcome .tag { margin-bottom: 3px; }
+    }
+    @media print { .notes { display: none !important; } html, body { background: white; } .deck { display: block; } .slide, .slide.active { display: flex; height: 7.5in; min-height: 0; width: 100%; padding: .55in .65in; page-break-after: always; gap: .2in; } .controls, .welcome-video { display: none; } .welcome-hero { display: block; } .card, .prompt { box-shadow: none; } h1 { font-size: 52pt; } h2 { font-size: 42pt; } }
+  </style>
+</head>
+<body>
+  <main class="deck" aria-label="CoCo Desktop demo slides">
+    <section class="slide active" id="welcome" aria-label="Slide 1: Welcome">
+      <div class="welcome-hero">
+        <div class="welcome-copy">
+          <div class="eyebrow">Snowflake CoCo / November 10, 2026 / 12 PM ET</div>
+          <h1>I Downloaded CoCo Desktop... Now What?</h1>
+          <p class="lead">Welcome. As you settle in, keep these two links handy. We'll walk through the app using a fictional PawCore example.</p>
+        </div>
+        <video class="welcome-video" autoplay muted loop playsinline preload="auto" aria-label="PawCore welcome video, playing silently on a loop">
+          <source src="pawcore-welcome-transparent-v2.webm" type="video/webm">
+          Your browser does not support this video.
+        </video>
+      </div>
+      <div class="grid welcome-links">
+        <div class="card">
+          <span class="tag">Get the app</span>
+          <h3>Snowflake CoCo downloads</h3>
+          <a href="https://www.snowflake.com/en/product/snowflake-coco/downloads/" target="_blank" rel="noopener noreferrer" aria-label="Open official Snowflake CoCo downloads"><img class="welcome-qr" src="coco-download-qr.png" alt="Scan to open official Snowflake CoCo downloads"></a>
+          <p class="url">snowflake.com/en/product/snowflake-coco/downloads/</p>
+          <p>Choose the Desktop installer for your computer. CLI is listed there too.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Example data</span>
+          <h3>PawCore on GitHub</h3>
+          <a href="https://github.com/calebaalexander/HandsOnLabs" target="_blank" rel="noopener noreferrer" aria-label="Open PawCore GitHub repository"><img class="welcome-qr" src="pawcore-github-qr.png" alt="Scan to open the PawCore GitHub repository"></a>
+          <p class="url">github.com/calebaalexander/HandsOnLabs</p>
+          <p>Fictional demo materials. Trying the data yourself requires your own authorized Snowflake access.</p>
+        </div>
+      </div>
+      <aside class="notes"><strong>Speaker notes</strong><ul>
+        <li>"Welcome to I Downloaded CoCo Desktop... Now What?"</li>
+        <li>"My name is Caleb Alexander, Account Engineer at Snowflake."</li>
+        <li>"If you've downloaded CoCo, opened it, and thought, okay... now what? You're in the right place. Today is about getting comfortable with the app: where things live, how it works, and how to get your first real task done with confidence."</li>
+        <li>"If you haven't downloaded CoCo yet, scan this QR or use the link. The second QR is the GitHub repo we'll use for today's PawCore example."</li>
+      </ul></aside>
+    </section>
+
+    <section class="slide" id="purpose" aria-label="Slide 2: Why we're here">
+      <div class="eyebrow">Why we're here</div>
+      <h2>From the blank screen to a first win.</h2>
+      <p class="lead">CoCo is useful when you know where to work, what context to give it, and how to check what it produces.</p>
+      <div class="grid">
+        <div class="card"><h3>Remove the guesswork</h3><p>Understand how connections, projects, sessions, and files fit together.</p></div>
+        <div class="card"><h3>Leave with a pattern</h3><p>Ask a focused question, inspect the action, verify the evidence, and refine the answer.</p></div>
+      </div>
+      <p class="foot">Today is a presenter-led first look, not a room-wide install session.</p>
+      <aside class="notes"><strong>Speaker notes</strong><ul>
+        <li>"We hear from a lot of customers, and internal users too, who download CoCo and dive headfirst into a specific use case."</li>
+        <li>"Today we're taking a step back to cover the foundations first."</li>
+        <li>"The goal is to get from a blank CoCo screen to an answer you can verify."</li>
+      </ul></aside>
+    </section>
+
+    <section class="slide" id="agenda" aria-label="Slide 3: Today's agenda">
+      <div class="eyebrow">Today's agenda</div>
+      <h2>See it once. Know where to start.</h2>
+      <ol class="step-list">
+        <li><span class="num">1</span><span>Find CoCo Desktop and the CLI option; check the access you need.</span></li>
+        <li><span class="num">2</span><span>Tour the app: connections, Agent and Editor views, projects, sessions, and settings.</span></li>
+        <li><span class="num">3</span><span>Start a PawCore project and work through one small support question with a checked answer.</span></li>
+        <li><span class="num">4</span><span>Hear Zach English of OneSix share his CoCo use cases at the end.</span></li>
+        <li><span class="num">5</span><span>Bring your questions to the Q&amp;A.</span></li>
+      </ol>
+      <aside class="notes"><strong>Speaker notes</strong><ul>
+        <li>"We'll cover where to get it, what access you need, and the first steps in Desktop."</li>
+        <li>"Then we'll use one small PawCore question to practice reviewing the evidence."</li>
+        <li>"Zach English will share his OneSix use cases at the end, followed by Q&amp;A."</li>
+      </ul></aside>
+    </section>
+
+    <section class="slide" id="series" aria-label="Slide 4: Continue the CoCo learning series">
+      <div class="eyebrow">Keep learning</div>
+      <h2>Where to go after today.</h2>
+      <div class="series-layout">
+        <div class="series-events">
+          <div class="card"><span class="tag">November 10, 2026 / Today</span><h3><a href="https://www.snowflake.com/webinars/i-downloaded-coco-desktop-now-what-webinar-20261110/" target="_blank" rel="noopener noreferrer">I Downloaded CoCo Desktop... Now What?</a></h3><p>Part 1: get oriented and complete a first checked task.</p></div>
+          <div class="card"><span class="tag">November 17, 2026 / Related lab</span><h3><a href="https://www.snowflake.com/webinars/prompt-to-pipeline-hands-on-data-engineering-with-cortex-code-20261117/" target="_blank" rel="noopener noreferrer">Prompt to Pipeline</a></h3><p>A separate, deeper data-engineering HOL with skills and plugins.</p></div>
+          <div class="card"><span class="tag">December 2, 2026 / Planned Part 2</span><h3>CoCo Desktop: Full Potential</h3><p>Move from a first task to repeatable work and better context. Registration link to follow.</p></div>
+        </div>
+        <div class="series-scan"><a href="https://www.snowflake.com/en/webinars/?tags=content-type%2Flab-and-quickstart&amp;tags=region%2Famericas" target="_blank" rel="noopener noreferrer" aria-label="Browse Americas hands-on labs"><img class="series-qr" src="hands-on-labs-qr.png" alt="Scan to browse Snowflake Americas hands-on labs"></a><p>Scan to browse Americas hands-on labs. This is a listings page, not a direct registration link for all three sessions.</p></div>
+      </div>
+      <aside class="notes"><strong>Speaker notes</strong><ul>
+        <li>"Today is Part 1. Part 2 on December 2 builds on this with repeatable work."</li>
+        <li>"If you want to go deeper on data engineering, Prompt to Pipeline runs November 17."</li>
+        <li>"Scan the QR to browse upcoming hands-on labs."</li>
+      </ul></aside>
+    </section>
+
+    <section class="slide" id="get-coco" aria-label="Slide 5: Get CoCo">
+      <div class="eyebrow">Get CoCo</div>
+      <h2>One CoCo. Three ways to work.</h2>
+      <div class="grid">
+        <div class="card"><span class="tag">Today</span><h3>CoCo Desktop</h3><p>A visual workspace for projects, conversations, and reviewing results.</p><a class="link-large" href="https://www.snowflake.com/en/product/snowflake-coco/downloads/" target="_blank" rel="noopener noreferrer">Official downloads ↗</a></div>
+        <div class="card"><span class="tag">Also available</span><h3>CoCo CLI</h3><p>Run CoCo in your terminal. Check account eligibility before installing.</p><a class="link-large" href="https://docs.snowflake.com/en/user-guide/cortex-code/cortex-code-cli" target="_blank" rel="noopener noreferrer">CLI setup ↗</a></div>
+        <div class="card"><span class="tag">Also available</span><h3>CoCo in Snowsight</h3><p>Use CoCo in the browser, inside the Snowflake web interface.</p></div>
+      </div>
+      <p class="aside">A standard Snowflake trial is not the dedicated CoCo CLI trial. Today's lab uses Desktop only.</p>
+      <aside class="notes"><strong>Speaker notes</strong><ul>
+        <li>"This HOL is strictly about the Desktop app, but CoCo comes in three flavors."</li>
+        <li>"Desktop gives us a visual place to work with projects, conversations, and results."</li>
+        <li>"If you prefer a terminal, the CLI is an option; check setup and account eligibility separately. CoCo also runs in Snowsight in the browser."</li>
+        <li>"I'll show the download location, then move into the prepared app."</li>
+      </ul></aside>
+    </section>
+
+    <section class="slide" id="environment" aria-label="Slide 6: Prerequisites">
+      <div class="eyebrow">Before you begin</div>
+      <h2>What you need to follow along.</h2>
+      <div class="grid">
+        <div class="card"><h3>Desktop + sign-in</h3><p>CoCo Desktop on macOS or Windows, plus your own Snowflake account, login, and approved sign-in method.</p></div>
+        <div class="card"><h3>CoCo access</h3><p>An active role with <code>SNOWFLAKE.CORTEX_USER</code> or <code>SNOWFLAKE.CORTEX_AGENT_USER</code>, and an available AI model.</p></div>
+        <div class="card"><h3>Query access</h3><p>A usable warehouse and permission to read <code>PAWCORE_ANALYTICS.SUPPORT.SUPPORT_TICKETS</code>. The GitHub repo does not grant Snowflake access.</p></div>
+      </div>
+      <p class="aside">Self-service trial? An account admin must add a credit card to enable AI features.</p>
+      <aside class="notes"><strong>Speaker notes</strong><ul>
+        <li>"To repeat this yourself, you need Desktop, your own Snowflake sign-in, and an eligible active role."</li>
+        <li>"For the PawCore question, you also need a warehouse and permission to query the tickets table."</li>
+        <li>"The GitHub link provides materials, not access to a Snowflake account or its data."</li>
+        <li>"If you're on a self-service trial, check AI enablement with your account admin before trying the exercise."</li>
+      </ul></aside>
+    </section>
+
+    <section class="slide" id="pawcore" aria-label="Slide 7: The PawCore story">
+      <div class="pawcore-intro">
+        <img class="pawcore-logo" src="pawcore-logo.png" alt="PawCore logo">
+        <div>
+          <div class="eyebrow">Solving the PawCore problem</div>
+          <p class="pawcore-about">PawCore Systems is a fictional pet wellness technology company. Its IoT devices, like the SmartCollar, monitor pet health for customers in 15+ countries.</p>
+        </div>
+      </div>
+      <h2>PawCore needs a support decision.</h2>
+      <div class="pawcore-layout">
+      <div class="pawcore-main">
+      <p class="lead">A SmartCollar V2 support lead asks: which region needs attention, and what evidence supports that call?</p>
+      <div class="grid">
+        <div class="card"><h3>What we have</h3><p>A small set of synthetic support tickets with region, priority, and status.</p></div>
+        <div class="card"><h3>What we need</h3><p>A short, evidence-backed readout of current workload and a sensible next check.</p></div>
+      </div>
+      </div>
+      <figure class="pawcore-figure" style="margin:0"><img class="pawcore-sketch" src="smartcollar-sketch.png" alt="Design sketch of the PawCore SmartCollar and its components"></figure>
+      </div>
+      <p class="aside">Ticket counts can show where to look. We will check the result before calling it an answer, and we will not infer root cause from counts alone.</p>
+      <aside class="notes"><strong>Speaker notes</strong><ul>
+        <li>"PawCore Systems is our fictional pet wellness company. Its IoT devices monitor pet health in 15+ countries."</li>
+        <li>"Imagine a PawCore support lead asking which region needs attention for SmartCollar V2." (Point to the SmartCollar sketch.)</li>
+        <li>"We'll give CoCo a small amount of context: ticket region, priority, and status."</li>
+        <li>"The task is to find where support work is concentrated and what to investigate next. We won't assume the answer; we'll check what the data says."</li>
+      </ul></aside>
+    </section>
+
+    <section class="slide" id="review" aria-label="Slide 8: AI best practices">
+      <div class="eyebrow">Working well with AI</div>
+      <h2>Trust the process, verify the answer.</h2>
+      <div class="grid">
+        <div class="card"><h3>Start with scope</h3><p>Use the right account, project, data, and permissions. Ask a clear question with relevant context.</p></div>
+        <div class="card"><h3>Review before running</h3><p>Keep approvals on. Check proposed SQL, tool actions, and file edits before accepting them.</p></div>
+        <div class="card"><h3>Check the claim</h3><p>Compare the answer with the actual result. Separate facts from guesses, then refine.</p></div>
+      </div>
+      <p class="foot">Ticket counts can show where to look. They cannot establish root cause on their own.</p>
+      <aside class="notes"><strong>Speaker notes</strong><ul>
+        <li>"Start by confirming the project, connection, role, and data you intend to use."</li>
+        <li>"Be specific in the request, and review proposed SQL or other actions before they run."</li>
+        <li>"Compare the response with the result, not just with what sounds plausible."</li>
+        <li>"Ticket volume tells us where to look; it does not tell us the root cause by itself."</li>
+      </ul></aside>
+    </section>
+
+    <section class="slide" id="dive-in" aria-label="Slide 9: Let's dive in">
+      <div class="eyebrow">Live in CoCo Desktop</div>
+      <h2>Let's dive in.</h2>
+      <p class="lead">From first connection to a PawCore question: watch how the project, context, agent actions, and human review come together.</p>
+      <p class="foot">Presenter-led demo. We will pause on the proposed action and check the evidence together.</p>
+      <aside class="notes"><strong>Speaker notes</strong><ul>
+        <li>"Enough slides. Let's switch to the app."</li>
+        <li>Switch to the VM window and start the Desktop tour.</li>
+      </ul></aside>
+    </section>
+
+    <section class="slide" id="questions" aria-label="Slide 10: Questions and next steps">
+      <div class="eyebrow">Questions and next steps</div>
+      <h2>Connect. Ask. Inspect. Check. Refine.</h2>
+      <div class="grid">
+        <div class="card"><h3>Get CoCo</h3><a class="link-large" href="https://www.snowflake.com/en/product/snowflake-coco/downloads/" target="_blank" rel="noopener noreferrer">Official downloads ↗</a><p class="url">snowflake.com/en/product/snowflake-coco/downloads/</p></div>
+        <div class="card"><h3>Explore PawCore</h3><a class="link-large" href="https://github.com/calebaalexander/HandsOnLabs" target="_blank" rel="noopener noreferrer">Fictional data repo ↗</a><p class="url">github.com/calebaalexander/HandsOnLabs</p></div>
+      </div>
+      <p class="aside">Use your own authorized Snowflake access. Review setup scripts before running them, especially in a shared account.</p>
+      <aside class="notes"><strong>Speaker notes</strong><ul>
+        <li>"The pattern to take away is: connect, ask clearly, inspect the action, check the evidence, and refine."</li>
+        <li>"The download and PawCore links are here if you want to revisit the materials."</li>
+        <li>"Use an authorized account and review any setup scripts before running them."</li>
+        <li>"Let's move into questions."</li>
+      </ul></aside>
+    </section>
+
+    <nav class="controls" aria-label="Slide controls">
+      <div style="display:flex;gap:10px;align-items:center"><button type="button" id="previous" aria-label="Previous slide">Back</button><span id="count" aria-live="polite">1 / 10</span><button type="button" id="next" aria-label="Next slide">Next</button></div>
+    </nav>
+  </main>
+  <script>
+    (() => {
+      const slides = Array.from(document.querySelectorAll('.slide'));
+      const previous = document.getElementById('previous');
+      const next = document.getElementById('next');
+      const count = document.getElementById('count');
+      const welcomeVideo = document.querySelector('.welcome-video');
+      let current = 0;
+
+      function show(index) {
+        current = Math.max(0, Math.min(index, slides.length - 1));
+        slides.forEach((slide, position) => {
+          slide.classList.toggle('active', position === current);
+          slide.setAttribute('aria-hidden', position === current ? 'false' : 'true');
+        });
+        if (current === 0) welcomeVideo.play().catch(() => {});
+        else welcomeVideo.pause();
+        previous.disabled = current === 0;
+        next.disabled = current === slides.length - 1;
+        count.textContent = `${current + 1} / ${slides.length}`;
+        history.replaceState(null, '', `#${slides[current].id}`);
+      }
+
+      previous.addEventListener('click', () => show(current - 1));
+      next.addEventListener('click', () => show(current + 1));
+      document.addEventListener('keydown', (event) => {
+        if (event.altKey || event.ctrlKey || event.metaKey) return;
+        if (event.key === 'ArrowRight' || event.key === 'PageDown' || event.key === ' ') {
+          if (event.target.closest('a, button')) return;
+          event.preventDefault(); show(current + 1);
+        } else if (event.key === 'ArrowLeft' || event.key === 'PageUp') {
+          event.preventDefault(); show(current - 1);
+        } else if (event.key.toLowerCase() === 'f') {
+          if (!document.fullscreenElement) document.documentElement.requestFullscreen?.();
+          else document.exitFullscreen?.();
+        } else if (event.key.toLowerCase() === 'n') {
+          document.body.classList.toggle('show-notes');
+        } else if (event.key.toLowerCase() === 'p' && !event.target.closest('a, button')) {
+          window.print();
+        }
+      });
+      window.addEventListener('hashchange', () => {
+        const index = slides.findIndex(slide => `#${slide.id}` === location.hash);
+        if (index >= 0) show(index);
+      });
+      show(Math.max(0, slides.findIndex(slide => `#${slide.id}` === location.hash)));
+    })();
+  </script>
+</body>
+</html>
