@@ -1,241 +1,357 @@
-ticket_id,device_id,lot_number,region,category,priority,status,created_date,resolved_date,description
-TKT-001,SC-2024-341-001,LOT341,EMEA,battery,high,resolved,2024-10-05,2024-10-08,Battery draining within 4 hours of full charge
-TKT-002,SC-2024-341-002,LOT341,EMEA,battery,high,resolved,2024-10-06,2024-10-10,Device shutting down unexpectedly at 30% battery
-TKT-003,SC-2024-341-003,LOT341,EMEA,connectivity,medium,resolved,2024-10-07,2024-10-09,Bluetooth disconnecting frequently from app
-TKT-004,SC-2024-341-004,LOT341,EMEA,battery,critical,open,2024-10-08,,Device not charging at all
-TKT-005,SC-2024-341-005,LOT341,EMEA,durability,medium,resolved,2024-10-09,2024-10-12,Collar clasp broke after 2 weeks
-TKT-006,SC-2024-341-010,LOT341,EMEA,battery,high,resolved,2024-10-10,2024-10-14,Battery life decreased significantly after update
-TKT-007,SC-2024-341-020,LOT341,EMEA,connectivity,low,resolved,2024-10-11,2024-10-13,GPS accuracy issues in urban areas
-TKT-008,SC-2024-341-050,LOT341,EMEA,battery,high,open,2024-10-12,,Rapid battery drain in cold weather
-TKT-009,SC-2024-341-100,LOT341,EMEA,durability,medium,resolved,2024-10-13,2024-10-16,Water damage despite IP67 rating
-TKT-010,SC-2024-341-200,LOT341,EMEA,battery,critical,open,2024-10-14,,Device overheating during charging
-TKT-011,SC-2024-340-001,LOT340,Americas,connectivity,low,resolved,2024-10-05,2024-10-06,Minor sync delays with mobile app
-TKT-012,SC-2024-340-002,LOT340,Americas,other,low,resolved,2024-10-06,2024-10-07,Question about activity tracking accuracy
-TKT-013,SC-2024-340-003,LOT340,Americas,connectivity,medium,resolved,2024-10-08,2024-10-10,App crashes when viewing historical data
-TKT-014,SC-2024-340-004,LOT340,Americas,other,low,resolved,2024-10-10,2024-10-11,Feature request for sleep tracking
-TKT-015,SC-2024-340-005,LOT340,Americas,durability,low,resolved,2024-10-12,2024-10-13,Strap color fading slightly
-TKT-016,SC-2024-339-001,LOT339,APAC,connectivity,medium,resolved,2024-10-05,2024-10-08,WiFi sync issues in certain locations
-TKT-017,SC-2024-339-002,LOT339,APAC,other,low,resolved,2024-10-07,2024-10-08,Translation issues in Japanese app version
-TKT-018,SC-2024-339-003,LOT339,APAC,battery,medium,resolved,2024-10-09,2024-10-12,Battery drains faster in high humidity
-TKT-019,SC-2024-339-004,LOT339,APAC,connectivity,low,resolved,2024-10-11,2024-10-12,Occasional GPS drift
-TKT-020,SC-2024-339-005,LOT339,APAC,other,low,resolved,2024-10-13,2024-10-14,Request for Mandarin language support
-TKT-021,SC-2024-341-006,LOT341,EMEA,battery,high,resolved,2024-10-15,2024-10-19,Battery showing incorrect percentage
-TKT-022,SC-2024-341-007,LOT341,EMEA,battery,critical,open,2024-10-16,,Smoke coming from charging port
-TKT-023,SC-2024-341-008,LOT341,EMEA,connectivity,medium,resolved,2024-10-17,2024-10-20,Lost connection during firmware update
-TKT-024,SC-2024-341-009,LOT341,EMEA,durability,high,open,2024-10-18,,Sensor stopped working after rain exposure
-TKT-025,SC-2024-341-011,LOT341,EMEA,battery,high,resolved,2024-10-19,2024-10-23,Device not holding charge overnight
-TKT-026,SC-2024-341-012,LOT341,EMEA,battery,medium,resolved,2024-10-20,2024-10-22,Charging takes 6+ hours
-TKT-027,SC-2024-341-013,LOT341,EMEA,connectivity,high,open,2024-10-21,,Complete loss of Bluetooth connectivity
-TKT-028,SC-2024-341-014,LOT341,EMEA,battery,high,resolved,2024-10-22,2024-10-26,Battery percentage jumps erratically
-TKT-029,SC-2024-341-015,LOT341,EMEA,durability,medium,resolved,2024-10-23,2024-10-26,Screen scratched easily
-TKT-030,SC-2024-341-016,LOT341,EMEA,battery,critical,open,2024-10-24,,Battery swelling noticed
-TKT-031,SC-2024-340-006,LOT340,Americas,other,low,resolved,2024-10-15,2024-10-16,How to export activity data
-TKT-032,SC-2024-340-007,LOT340,Americas,connectivity,low,resolved,2024-10-17,2024-10-18,Notification delays on iOS
-TKT-033,SC-2024-340-008,LOT340,Americas,other,low,resolved,2024-10-19,2024-10-20,Collar size exchange request
-TKT-034,SC-2024-340-009,LOT340,Americas,connectivity,medium,resolved,2024-10-21,2024-10-23,Data not syncing to cloud backup
-TKT-035,SC-2024-340-010,LOT340,Americas,durability,low,resolved,2024-10-23,2024-10-24,Minor cosmetic scuff on device
-TKT-036,SC-2024-339-006,LOT339,APAC,connectivity,medium,resolved,2024-10-15,2024-10-18,App timeout issues on Android
-TKT-037,SC-2024-339-007,LOT339,APAC,other,low,resolved,2024-10-17,2024-10-18,Feature request for multiple pet profiles
-TKT-038,SC-2024-339-008,LOT339,APAC,battery,low,resolved,2024-10-19,2024-10-20,Battery indicator stuck at 100%
-TKT-039,SC-2024-339-009,LOT339,APAC,connectivity,medium,resolved,2024-10-21,2024-10-24,Geofence alerts delayed
-TKT-040,SC-2024-339-010,LOT339,APAC,other,low,resolved,2024-10-23,2024-10-24,Timezone display issue
-TKT-041,SC-2024-341-017,LOT341,EMEA,battery,high,open,2024-10-25,,Battery life now less than 2 hours
-TKT-042,SC-2024-341-018,LOT341,EMEA,battery,high,resolved,2024-10-26,2024-10-30,Device turns off when battery shows 50%
-TKT-043,SC-2024-341-019,LOT341,EMEA,connectivity,medium,resolved,2024-10-27,2024-10-29,GPS tracking stops randomly
-TKT-044,SC-2024-341-021,LOT341,EMEA,durability,high,open,2024-10-28,,Moisture detected inside display
-TKT-045,SC-2024-341-022,LOT341,EMEA,battery,critical,open,2024-10-29,,Device completely dead after 3 weeks
-TKT-046,SC-2024-341-023,LOT341,EMEA,battery,high,resolved,2024-10-30,2024-11-03,Inconsistent charging behavior
-TKT-047,SC-2024-341-024,LOT341,EMEA,connectivity,medium,open,2024-10-31,,Firmware update bricked device
-TKT-048,SC-2024-341-025,LOT341,EMEA,battery,high,resolved,2024-11-01,2024-11-05,Fast drain during activity tracking
-TKT-049,SC-2024-341-026,LOT341,EMEA,durability,medium,resolved,2024-11-02,2024-11-05,Rubber seal deteriorating
-TKT-050,SC-2024-341-027,LOT341,EMEA,battery,high,open,2024-11-03,,Battery health at 40% after 1 month
-TKT-051,SC-2024-340-011,LOT340,Americas,connectivity,low,resolved,2024-10-25,2024-10-26,Widget not updating on home screen
-TKT-052,SC-2024-340-012,LOT340,Americas,other,low,resolved,2024-10-27,2024-10-28,Question about warranty coverage
-TKT-053,SC-2024-340-013,LOT340,Americas,connectivity,low,resolved,2024-10-29,2024-10-30,Sharing feature not working
-TKT-054,SC-2024-340-014,LOT340,Americas,other,low,resolved,2024-10-31,2024-11-01,Account login issues
-TKT-055,SC-2024-340-015,LOT340,Americas,durability,medium,resolved,2024-11-02,2024-11-05,Buckle mechanism stiff
-TKT-056,SC-2024-339-011,LOT339,APAC,connectivity,low,resolved,2024-10-25,2024-10-27,App language keeps resetting
-TKT-057,SC-2024-339-012,LOT339,APAC,other,low,resolved,2024-10-27,2024-10-28,Distance tracking seems off
-TKT-058,SC-2024-339-013,LOT339,APAC,battery,low,resolved,2024-10-29,2024-10-31,Charging notification not appearing
-TKT-059,SC-2024-339-014,LOT339,APAC,connectivity,low,resolved,2024-10-31,2024-11-01,Health data not syncing to Apple Health
-TKT-060,SC-2024-339-015,LOT339,APAC,other,low,resolved,2024-11-02,2024-11-03,Need help setting up geofence
-TKT-061,SC-2024-341-028,LOT341,EMEA,battery,critical,open,2024-11-04,,Replacement device also has battery issues
-TKT-062,SC-2024-341-029,LOT341,EMEA,battery,high,resolved,2024-11-05,2024-11-09,Power button unresponsive
-TKT-063,SC-2024-341-030,LOT341,EMEA,connectivity,high,open,2024-11-06,,Cannot pair with any device
-TKT-064,SC-2024-341-031,LOT341,EMEA,durability,medium,resolved,2024-11-07,2024-11-10,LED indicator not working
-TKT-065,SC-2024-341-032,LOT341,EMEA,battery,high,open,2024-11-08,,Third replacement still has issues
-TKT-066,SC-2024-341-033,LOT341,EMEA,battery,high,resolved,2024-11-09,2024-11-13,Battery calibration problems
-TKT-067,SC-2024-341-034,LOT341,EMEA,connectivity,medium,resolved,2024-11-10,2024-11-12,Range issues with Bluetooth
-TKT-068,SC-2024-341-035,LOT341,EMEA,battery,critical,open,2024-11-11,,Device caught fire during charging
-TKT-069,SC-2024-341-036,LOT341,EMEA,durability,high,open,2024-11-12,,Water ingress after swimming
-TKT-070,SC-2024-341-037,LOT341,EMEA,battery,high,resolved,2024-11-13,2024-11-17,Charging port corrosion
-TKT-071,SC-2024-340-016,LOT340,Americas,other,low,resolved,2024-11-04,2024-11-05,How to customize alerts
-TKT-072,SC-2024-340-017,LOT340,Americas,connectivity,low,resolved,2024-11-06,2024-11-07,Slow app performance
-TKT-073,SC-2024-340-018,LOT340,Americas,other,low,resolved,2024-11-08,2024-11-09,Gift wrapping for order
-TKT-074,SC-2024-340-019,LOT340,Americas,connectivity,medium,resolved,2024-11-10,2024-11-12,OTA update stuck at 50%
-TKT-075,SC-2024-340-020,LOT340,Americas,battery,low,resolved,2024-11-12,2024-11-13,Battery indicator flickers occasionally
-TKT-076,SC-2024-339-016,LOT339,APAC,connectivity,medium,resolved,2024-11-04,2024-11-07,Cannot connect to 5GHz WiFi
-TKT-077,SC-2024-339-017,LOT339,APAC,other,low,resolved,2024-11-06,2024-11-07,Activity goals not saving
-TKT-078,SC-2024-339-018,LOT339,APAC,battery,medium,resolved,2024-11-08,2024-11-11,Battery performance in extreme heat
-TKT-079,SC-2024-339-019,LOT339,APAC,connectivity,low,resolved,2024-11-10,2024-11-11,Push notifications inconsistent
-TKT-080,SC-2024-339-020,LOT339,APAC,other,low,resolved,2024-11-12,2024-11-13,How to enable dark mode in app
-TKT-081,SC-2024-341-038,LOT341,EMEA,battery,high,open,2024-11-14,,Battery replacement needed after 6 weeks
-TKT-082,SC-2024-341-039,LOT341,EMEA,battery,high,resolved,2024-11-15,2024-11-19,Device overheating during use
-TKT-083,SC-2024-341-040,LOT341,EMEA,connectivity,medium,open,2024-11-16,,Bluetooth keeps dropping in humid weather
-TKT-084,SC-2024-341-041,LOT341,EMEA,durability,high,open,2024-11-17,,Sensor malfunction after exposure to rain
-TKT-085,SC-2024-341-042,LOT341,EMEA,battery,critical,open,2024-11-18,,Full refund requested due to ongoing battery issues
-TKT-086,SC-2024-341-043,LOT341,EMEA,battery,high,resolved,2024-11-19,2024-11-23,Charging cable compatibility issues
-TKT-087,SC-2024-341-044,LOT341,EMEA,connectivity,medium,resolved,2024-11-20,2024-11-22,App not recognizing device after reset
-TKT-088,SC-2024-341-045,LOT341,EMEA,battery,high,open,2024-11-21,,Battery depletes even when device is off
-TKT-089,SC-2024-341-046,LOT341,EMEA,durability,medium,resolved,2024-11-22,2024-11-25,Strap material causing skin irritation
-TKT-090,SC-2024-341-047,LOT341,EMEA,battery,high,open,2024-11-23,,Considering legal action over battery defects
-TKT-091,SC-2024-340-021,LOT340,Americas,connectivity,low,resolved,2024-11-14,2024-11-15,Achievement badges not unlocking
-TKT-092,SC-2024-340-022,LOT340,Americas,other,low,resolved,2024-11-16,2024-11-17,Family sharing setup help
-TKT-093,SC-2024-340-023,LOT340,Americas,other,low,resolved,2024-11-18,2024-11-19,How to change pet profile photo
-TKT-094,SC-2024-340-024,LOT340,Americas,connectivity,low,resolved,2024-11-20,2024-11-21,Map view loading slowly
-TKT-095,SC-2024-340-025,LOT340,Americas,other,low,resolved,2024-11-22,2024-11-23,Subscription plan questions
-TKT-096,SC-2024-339-021,LOT339,APAC,connectivity,low,resolved,2024-11-14,2024-11-16,App crashing on older Android devices
-TKT-097,SC-2024-339-022,LOT339,APAC,other,low,resolved,2024-11-16,2024-11-17,Export data to CSV not working
-TKT-098,SC-2024-339-023,LOT339,APAC,battery,low,resolved,2024-11-18,2024-11-19,Power saving mode suggestion
-TKT-099,SC-2024-339-024,LOT339,APAC,connectivity,medium,resolved,2024-11-20,2024-11-23,Live tracking has 30 second delay
-TKT-100,SC-2024-339-025,LOT339,APAC,other,low,resolved,2024-11-22,2024-11-23,Request for Korean language
-TKT-101,SC-2024-341-048,LOT341,EMEA,battery,high,open,2024-11-24,,Class action inquiry about battery defects
-TKT-102,SC-2024-341-049,LOT341,EMEA,battery,critical,open,2024-11-25,,Device exploded during charging
-TKT-103,SC-2024-341-051,LOT341,EMEA,connectivity,high,open,2024-11-26,,Total system failure
-TKT-104,SC-2024-341-052,LOT341,EMEA,durability,high,open,2024-11-27,,Complete seal failure
-TKT-105,SC-2024-341-053,LOT341,EMEA,battery,high,resolved,2024-11-28,2024-12-02,USB-C port damaged
-TKT-106,SC-2024-341-054,LOT341,EMEA,battery,high,open,2024-11-29,,Fourth device replacement requested
-TKT-107,SC-2024-341-055,LOT341,EMEA,connectivity,medium,resolved,2024-11-30,2024-12-02,Cannot update to latest firmware
-TKT-108,SC-2024-341-056,LOT341,EMEA,battery,critical,open,2024-12-01,,Demanding full refund plus compensation
-TKT-109,SC-2024-341-057,LOT341,EMEA,durability,medium,resolved,2024-12-02,2024-12-05,Button responsiveness degraded
-TKT-110,SC-2024-341-058,LOT341,EMEA,battery,high,open,2024-12-03,,Battery warranty claim
-TKT-111,SC-2024-340-026,LOT340,Americas,other,low,resolved,2024-11-24,2024-11-25,Two-factor authentication help
-TKT-112,SC-2024-340-027,LOT340,Americas,connectivity,low,resolved,2024-11-26,2024-11-27,Calendar integration not syncing
-TKT-113,SC-2024-340-028,LOT340,Americas,other,low,resolved,2024-11-28,2024-11-29,Positive feedback - love the product
-TKT-114,SC-2024-340-029,LOT340,Americas,connectivity,low,resolved,2024-11-30,2024-12-01,Notification sounds not customizable
-TKT-115,SC-2024-340-030,LOT340,Americas,battery,low,resolved,2024-12-02,2024-12-03,Question about optimal charging practices
-TKT-116,SC-2024-339-026,LOT339,APAC,connectivity,low,resolved,2024-11-24,2024-11-26,WeChat integration request
-TKT-117,SC-2024-339-027,LOT339,APAC,other,low,resolved,2024-11-26,2024-11-27,Metric vs imperial units toggle
-TKT-118,SC-2024-339-028,LOT339,APAC,battery,low,resolved,2024-11-28,2024-11-29,LED brightness adjustment request
-TKT-119,SC-2024-339-029,LOT339,APAC,connectivity,low,resolved,2024-11-30,2024-12-01,QR code pairing not scanning
-TKT-120,SC-2024-339-030,LOT339,APAC,other,low,resolved,2024-12-02,2024-12-03,Pet weight tracking feature request
-TKT-121,SC-2024-341-059,LOT341,EMEA,battery,high,open,2024-12-04,,Initiating chargeback for defective product
-TKT-122,SC-2024-341-060,LOT341,EMEA,battery,high,resolved,2024-12-05,2024-12-09,Battery showing negative percentage
-TKT-123,SC-2024-341-061,LOT341,EMEA,connectivity,medium,open,2024-12-06,,Device not discoverable by any phone
-TKT-124,SC-2024-341-062,LOT341,EMEA,durability,high,open,2024-12-07,,Cracked casing without impact
-TKT-125,SC-2024-341-063,LOT341,EMEA,battery,critical,open,2024-12-08,,Posting negative reviews everywhere
-TKT-126,SC-2024-341-064,LOT341,EMEA,battery,high,resolved,2024-12-09,2024-12-13,Wireless charging not working
-TKT-127,SC-2024-341-065,LOT341,EMEA,connectivity,medium,resolved,2024-12-10,2024-12-12,Cannot re-pair after factory reset
-TKT-128,SC-2024-341-066,LOT341,EMEA,battery,high,open,2024-12-11,,Filing complaint with consumer protection
-TKT-129,SC-2024-341-067,LOT341,EMEA,durability,medium,resolved,2024-12-12,2024-12-15,Display discoloration
-TKT-130,SC-2024-341-068,LOT341,EMEA,battery,high,open,2024-12-13,,Media inquiry about battery issues
-TKT-131,SC-2024-340-031,LOT340,Americas,connectivity,low,resolved,2024-12-04,2024-12-05,Siri shortcuts not triggering
-TKT-132,SC-2024-340-032,LOT340,Americas,other,low,resolved,2024-12-06,2024-12-07,Bulk order for dog training school
-TKT-133,SC-2024-340-033,LOT340,Americas,other,low,resolved,2024-12-08,2024-12-09,Referral program questions
-TKT-134,SC-2024-340-034,LOT340,Americas,connectivity,low,resolved,2024-12-10,2024-12-11,Apple Watch companion app request
-TKT-135,SC-2024-340-035,LOT340,Americas,durability,low,resolved,2024-12-12,2024-12-13,Extra strap length options
-TKT-136,SC-2024-339-031,LOT339,APAC,connectivity,medium,resolved,2024-12-04,2024-12-07,Line app notification integration
-TKT-137,SC-2024-339-032,LOT339,APAC,other,low,resolved,2024-12-06,2024-12-07,Multi-pet discount inquiry
-TKT-138,SC-2024-339-033,LOT339,APAC,battery,low,resolved,2024-12-08,2024-12-09,Solar charging feature request
-TKT-139,SC-2024-339-034,LOT339,APAC,connectivity,low,resolved,2024-12-10,2024-12-11,NFC tap not registering
-TKT-140,SC-2024-339-035,LOT339,APAC,other,low,resolved,2024-12-12,2024-12-13,Regional pricing feedback
-TKT-141,SC-2024-341-069,LOT341,EMEA,battery,high,open,2024-12-14,,Escalating to executive team
-TKT-142,SC-2024-341-070,LOT341,EMEA,battery,critical,open,2024-12-15,,Product recall demand
-TKT-143,SC-2024-341-071,LOT341,EMEA,connectivity,high,open,2024-12-16,,Hardware failure affecting all functions
-TKT-144,SC-2024-341-072,LOT341,EMEA,durability,high,open,2024-12-17,,Waterproofing completely failed
-TKT-145,SC-2024-341-073,LOT341,EMEA,battery,high,resolved,2024-12-18,2024-12-22,Charging circuit malfunction
-TKT-146,SC-2024-341-074,LOT341,EMEA,battery,high,open,2024-12-19,,Viral social media post about battery fire
-TKT-147,SC-2024-341-075,LOT341,EMEA,connectivity,medium,resolved,2024-12-20,2024-12-22,Antenna issues suspected
-TKT-148,SC-2024-341-076,LOT341,EMEA,battery,critical,open,2024-12-21,,Regulatory complaint filed
-TKT-149,SC-2024-341-077,LOT341,EMEA,durability,medium,resolved,2024-12-22,2024-12-25,Accelerometer stopped working
-TKT-150,SC-2024-341-078,LOT341,EMEA,battery,high,open,2024-12-23,,Full product line return
-TKT-151,SC-2024-340-036,LOT340,Americas,other,low,resolved,2024-12-14,2024-12-15,Gift card redemption help
-TKT-152,SC-2024-340-037,LOT340,Americas,connectivity,low,resolved,2024-12-16,2024-12-17,Alexa skill not responding
-TKT-153,SC-2024-340-038,LOT340,Americas,other,low,resolved,2024-12-18,2024-12-19,Warranty extension purchase
-TKT-154,SC-2024-340-039,LOT340,Americas,other,low,resolved,2024-12-20,2024-12-21,Holiday shipping timeline
-TKT-155,SC-2024-340-040,LOT340,Americas,battery,low,resolved,2024-12-22,2024-12-23,Question about battery replacement service
-TKT-156,SC-2024-339-036,LOT339,APAC,connectivity,low,resolved,2024-12-14,2024-12-16,Kakaotalk integration request
-TKT-157,SC-2024-339-037,LOT339,APAC,other,low,resolved,2024-12-16,2024-12-17,Customizable collar colors request
-TKT-158,SC-2024-339-038,LOT339,APAC,battery,low,resolved,2024-12-18,2024-12-19,Fast charging support inquiry
-TKT-159,SC-2024-339-039,LOT339,APAC,connectivity,medium,resolved,2024-12-20,2024-12-23,5G connectivity issues
-TKT-160,SC-2024-339-040,LOT339,APAC,other,low,resolved,2024-12-22,2024-12-23,Veterinarian partnership program inquiry
-TKT-161,SC-2024-341-079,LOT341,EMEA,battery,high,open,2024-12-24,,Christmas ruined by defective device
-TKT-162,SC-2024-341-080,LOT341,EMEA,battery,high,resolved,2024-12-25,2024-12-29,Gift recipient disappointed with battery life
-TKT-163,SC-2024-341-081,LOT341,EMEA,connectivity,medium,open,2024-12-26,,New Year sale purchase already failing
-TKT-164,SC-2024-341-082,LOT341,EMEA,durability,high,open,2024-12-27,,Device fell apart during unboxing
-TKT-165,SC-2024-341-083,LOT341,EMEA,battery,critical,open,2024-12-28,,Legal team contact request
-TKT-166,SC-2024-341-084,LOT341,EMEA,battery,high,resolved,2024-12-29,2025-01-02,Battery indicator frozen
-TKT-167,SC-2024-341-085,LOT341,EMEA,connectivity,medium,resolved,2024-12-30,2025-01-01,Pairing code not generating
-TKT-168,SC-2024-341-086,LOT341,EMEA,battery,high,open,2024-12-31,,New Year resolution to get refund
-TKT-169,SC-2024-341-087,LOT341,EMEA,durability,medium,resolved,2025-01-01,2025-01-04,Heart rate sensor inaccurate
-TKT-170,SC-2024-341-088,LOT341,EMEA,battery,high,open,2025-01-02,,Consumer watchdog complaint
-TKT-171,SC-2024-340-041,LOT340,Americas,connectivity,low,resolved,2024-12-24,2024-12-26,Holiday firmware update feedback
-TKT-172,SC-2024-340-042,LOT340,Americas,other,low,resolved,2024-12-26,2024-12-27,Pet trainer testimonial to share
-TKT-173,SC-2024-340-043,LOT340,Americas,other,low,resolved,2024-12-28,2024-12-29,Ambassador program application
-TKT-174,SC-2024-340-044,LOT340,Americas,connectivity,low,resolved,2024-12-30,2024-12-31,CarPlay integration request
-TKT-175,SC-2024-340-045,LOT340,Americas,other,low,resolved,2025-01-01,2025-01-02,New Year wishes and product praise
-TKT-176,SC-2024-339-041,LOT339,APAC,connectivity,low,resolved,2024-12-24,2024-12-27,Lunar New Year promotion inquiry
-TKT-177,SC-2024-339-042,LOT339,APAC,other,low,resolved,2024-12-26,2024-12-27,Local retailer partnership inquiry
-TKT-178,SC-2024-339-043,LOT339,APAC,battery,low,resolved,2024-12-28,2024-12-29,Eco-friendly packaging praise
-TKT-179,SC-2024-339-044,LOT339,APAC,connectivity,low,resolved,2024-12-30,2024-12-31,Smart home integration request
-TKT-180,SC-2024-339-045,LOT339,APAC,other,low,resolved,2025-01-01,2025-01-02,Happy customer testimonial
-TKT-181,SC-2024-341-089,LOT341,EMEA,battery,high,open,2025-01-03,,Press inquiry about battery defects
-TKT-182,SC-2024-341-090,LOT341,EMEA,battery,critical,open,2025-01-04,,Insurance claim for property damage
-TKT-183,SC-2024-341-091,LOT341,EMEA,connectivity,high,open,2025-01-05,,Complete product failure
-TKT-184,SC-2024-341-092,LOT341,EMEA,durability,high,open,2025-01-06,,Quality control complaint to management
-TKT-185,SC-2024-341-093,LOT341,EMEA,battery,high,resolved,2025-01-07,2025-01-11,Temperature sensor affecting battery
-TKT-186,SC-2024-341-094,LOT341,EMEA,battery,high,open,2025-01-08,,Social media influencer complaint
-TKT-187,SC-2024-341-095,LOT341,EMEA,connectivity,medium,resolved,2025-01-09,2025-01-11,NFC payment feature not working
-TKT-188,SC-2024-341-096,LOT341,EMEA,battery,critical,open,2025-01-10,,Considering class action participation
-TKT-189,SC-2024-341-097,LOT341,EMEA,durability,medium,resolved,2025-01-11,2025-01-14,GPS module failure
-TKT-190,SC-2024-341-098,LOT341,EMEA,battery,high,open,2025-01-12,,CEO email requested
-TKT-191,SC-2024-340-046,LOT340,Americas,other,low,resolved,2025-01-03,2025-01-04,Veterinarian recommendation program
-TKT-192,SC-2024-340-047,LOT340,Americas,connectivity,low,resolved,2025-01-05,2025-01-06,Android Auto support request
-TKT-193,SC-2024-340-048,LOT340,Americas,other,low,resolved,2025-01-07,2025-01-08,Success story for marketing
-TKT-194,SC-2024-340-049,LOT340,Americas,connectivity,low,resolved,2025-01-09,2025-01-10,Smartwatch integration improvement
-TKT-195,SC-2024-340-050,LOT340,Americas,battery,low,resolved,2025-01-11,2025-01-12,Long-term battery maintenance tips
-TKT-196,SC-2024-339-046,LOT339,APAC,connectivity,low,resolved,2025-01-03,2025-01-06,Alibaba marketplace listing inquiry
-TKT-197,SC-2024-339-047,LOT339,APAC,other,low,resolved,2025-01-05,2025-01-06,Breed-specific features request
-TKT-198,SC-2024-339-048,LOT339,APAC,battery,low,resolved,2025-01-07,2025-01-08,Portable charger compatibility
-TKT-199,SC-2024-339-049,LOT339,APAC,connectivity,low,resolved,2025-01-09,2025-01-10,Regional server latency feedback
-TKT-200,SC-2024-339-050,LOT339,APAC,other,low,resolved,2025-01-11,2025-01-12,Wholesale pricing inquiry
-TKT-201,SC-2024-341-099,LOT341,EMEA,battery,high,open,2025-01-13,,Blog post warning others about battery
-TKT-202,SC-2024-341-100,LOT341,EMEA,battery,high,resolved,2025-01-14,2025-01-18,Battery management system reset needed
-TKT-203,SC-2024-341-101,LOT341,EMEA,connectivity,medium,open,2025-01-15,,WiFi module suspected faulty
-TKT-204,SC-2024-341-102,LOT341,EMEA,durability,high,open,2025-01-16,,Structural integrity compromised
-TKT-205,SC-2024-341-103,LOT341,EMEA,battery,critical,open,2025-01-17,,Demanding product recall
-TKT-206,SC-2024-341-104,LOT341,EMEA,battery,high,resolved,2025-01-18,2025-01-22,Power management IC failure
-TKT-207,SC-2024-341-105,LOT341,EMEA,connectivity,medium,resolved,2025-01-19,2025-01-21,OTA update corrupted device
-TKT-208,SC-2024-341-106,LOT341,EMEA,battery,high,open,2025-01-20,,Fifth replacement device needed
-TKT-209,SC-2024-341-107,LOT341,EMEA,durability,medium,resolved,2025-01-21,2025-01-24,Microphone not picking up sounds
-TKT-210,SC-2024-341-108,LOT341,EMEA,battery,high,open,2025-01-22,,YouTube review warning about product
-TKT-211,SC-2024-340-051,LOT340,Americas,connectivity,low,resolved,2025-01-13,2025-01-14,Google Fit sync improvement
-TKT-212,SC-2024-340-052,LOT340,Americas,other,low,resolved,2025-01-15,2025-01-16,Non-profit discount request
-TKT-213,SC-2024-340-053,LOT340,Americas,other,low,resolved,2025-01-17,2025-01-18,Press sample request
-TKT-214,SC-2024-340-054,LOT340,Americas,connectivity,low,resolved,2025-01-19,2025-01-20,Strava integration improvement
-TKT-215,SC-2024-340-055,LOT340,Americas,durability,low,resolved,2025-01-21,2025-01-22,Color options expansion request
-TKT-216,SC-2024-339-051,LOT339,APAC,connectivity,medium,resolved,2025-01-13,2025-01-16,Regional payment method support
-TKT-217,SC-2024-339-052,LOT339,APAC,other,low,resolved,2025-01-15,2025-01-16,Shipping to rural areas
-TKT-218,SC-2024-339-053,LOT339,APAC,battery,low,resolved,2025-01-17,2025-01-18,USB-C PD charging support
-TKT-219,SC-2024-339-054,LOT339,APAC,connectivity,low,resolved,2025-01-19,2025-01-20,Local cloud server request
-TKT-220,SC-2024-339-055,LOT339,APAC,other,low,resolved,2025-01-21,2025-01-22,Reseller certification inquiry
-TKT-221,SC-2024-341-109,LOT341,EMEA,battery,critical,open,2025-01-23,,Attorney letter regarding battery defects
-TKT-222,SC-2024-341-110,LOT341,EMEA,battery,high,resolved,2025-01-24,2025-01-28,Charging protocol incompatibility
-TKT-223,SC-2024-341-111,LOT341,EMEA,connectivity,high,open,2025-01-25,,Bluetooth 5.0 regression
-TKT-224,SC-2024-341-112,LOT341,EMEA,durability,high,open,2025-01-26,,Material defect visible
-TKT-225,SC-2024-341-113,LOT341,EMEA,battery,high,open,2025-01-27,,Warranty claim for business disruption
-TKT-226,SC-2024-341-114,LOT341,EMEA,battery,high,resolved,2025-01-28,2025-02-01,Thermal throttling issues
-TKT-227,SC-2024-341-115,LOT341,EMEA,connectivity,medium,resolved,2025-01-29,2025-01-31,Certificate pinning issue
-TKT-228,SC-2024-341-116,LOT341,EMEA,battery,critical,open,2025-01-30,,Government agency complaint filed
-TKT-229,SC-2024-341-117,LOT341,EMEA,durability,medium,resolved,2025-01-31,2025-02-03,Speaker grille damage
-TKT-230,SC-2024-341-118,LOT341,EMEA,battery,high,open,2025-02-01,,Organized boycott of brand
-TKT-231,SC-2024-340-056,LOT340,Americas,other,low,resolved,2025-01-23,2025-01-24,Feature comparison with competitors
-TKT-232,SC-2024-340-057,LOT340,Americas,connectivity,low,resolved,2025-01-25,2025-01-26,Samsung SmartThings integration
-TKT-233,SC-2024-340-058,LOT340,Americas,other,low,resolved,2025-01-27,2025-01-28,Academic research collaboration
-TKT-234,SC-2024-340-059,LOT340,Americas,connectivity,medium,resolved,2025-01-29,2025-02-01,Thread/Matter protocol support
-TKT-235,SC-2024-340-060,LOT340,Americas,battery,low,resolved,2025-01-31,2025-02-01,Qi wireless charging pad recommendation
-TKT-236,SC-2024-339-056,LOT339,APAC,connectivity,low,resolved,2025-01-23,2025-01-26,Huawei HarmonyOS support
-TKT-237,SC-2024-339-057,LOT339,APAC,other,low,resolved,2025-01-25,2025-01-26,Local celebrity endorsement inquiry
-TKT-238,SC-2024-339-058,LOT339,APAC,battery,medium,resolved,2025-01-27,2025-01-30,Reverse wireless charging request
-TKT-239,SC-2024-339-059,LOT339,APAC,connectivity,low,resolved,2025-01-29,2025-01-30,Xiaomi ecosystem integration
-TKT-240,SC-2024-339-060,LOT339,APAC,other,low,resolved,2025-01-31,2025-02-01,Regional event sponsorship
+ticket_id,created_date,region,country,product,firmware_version,category,priority,status,channel,resolved_date,description
+PC-0001,2026-08-01,EMEA,Spain,SmartCollar V1,1.8.2,Fit & comfort,Medium,Resolved,Phone,2026-08-06,Strap irritating pet's neck
+PC-0002,2026-08-01,APAC,South Korea,SmartCollar V2,2.0.4,App sync,Low,Resolved,Phone,2026-08-10,Activity history missing for last week
+PC-0003,2026-08-02,APAC,Singapore,SmartCollar V2,2.0.4,Battery,Low,Resolved,Email,2026-08-04,Charging dock not recognized
+PC-0004,2026-08-02,APAC,Japan,SmartCollar V2,2.0.4,App sync,Medium,Resolved,Phone,2026-08-07,App stuck on syncing
+PC-0005,2026-08-03,Americas,Mexico,SmartCollar V1,1.8.2,App sync,Low,Resolved,Chat,2026-08-07,Pet profile reset after login
+PC-0006,2026-08-03,APAC,South Korea,HomeBase Station,n/a,Fit & comfort,Low,Resolved,App,2026-08-10,Clasp opens on its own
+PC-0007,2026-08-04,EMEA,Spain,HomeBase Station,n/a,Health alerts,Low,Resolved,App,2026-08-08,Temperature alert sent repeatedly
+PC-0008,2026-08-04,Americas,Mexico,SmartCollar V1,1.8.2,Fit & comfort,Medium,Resolved,App,2026-08-07,Collar too heavy for small breed
+PC-0009,2026-08-04,APAC,Singapore,SmartCollar V1,1.8.2,Connectivity,Medium,Open,Phone,,Collar disconnects from the app every few minutes
+PC-0010,2026-08-05,EMEA,Netherlands,SmartCollar V2,2.0.3,App sync,Medium,Resolved,Phone,2026-08-10,App stuck on syncing
+PC-0011,2026-08-05,EMEA,Spain,SmartLeash Connect,n/a,GPS accuracy,High,Resolved,Phone,2026-08-14,Walk route not recorded
+PC-0012,2026-08-05,APAC,Japan,SmartCollar V2,2.0.4,Fit & comfort,Low,Resolved,Chat,2026-08-09,Collar too heavy for small breed
+PC-0013,2026-08-06,EMEA,Germany,SmartCollar V1,1.8.2,Fit & comfort,High,In Progress,Chat,,Collar too heavy for small breed
+PC-0014,2026-08-06,Americas,Canada,HomeBase Station,n/a,Fit & comfort,Medium,Resolved,App,2026-08-11,Collar too heavy for small breed
+PC-0015,2026-08-07,EMEA,France,SmartCollar V1,1.8.2,Health alerts,Medium,Resolved,App,2026-08-11,Activity score stuck at zero
+PC-0016,2026-08-07,EMEA,France,SmartCollar V2,2.0.4,Connectivity,High,Resolved,App,2026-08-14,Bluetooth pairing fails after update
+PC-0017,2026-08-07,Americas,Mexico,SmartLeash Connect,n/a,Connectivity,Medium,Resolved,App,2026-08-12,Collar disconnects from the app every few minutes
+PC-0018,2026-08-07,Americas,United States,HomeBase Station,n/a,GPS accuracy,Medium,In Progress,App,,Location jumps several blocks
+PC-0019,2026-08-07,Americas,Mexico,SmartCollar V1,1.8.2,Health alerts,Medium,In Progress,Chat,,Heart-rate alert seems wrong during play
+PC-0020,2026-08-07,Americas,United States,SmartCollar V1,1.8.2,Health alerts,Medium,Open,Email,,Heart-rate alert seems wrong during play
+PC-0021,2026-08-08,EMEA,Netherlands,HomeBase Station,n/a,Battery,Low,Resolved,Email,2026-08-14,Battery drains in under a day
+PC-0022,2026-08-08,EMEA,France,SmartCollar V2,2.0.3,Connectivity,Medium,Open,Email,,Device shows offline while pet is home
+PC-0023,2026-08-08,EMEA,France,SmartLeash Connect,n/a,Health alerts,Medium,Resolved,Chat,2026-08-09,Activity score stuck at zero
+PC-0024,2026-08-08,Americas,Mexico,SmartCollar V2,2.0.4,App sync,Medium,Resolved,App,2026-08-15,Activity history missing for last week
+PC-0025,2026-08-08,Americas,Canada,SmartCollar V2,2.0.3,Connectivity,Low,In Progress,Email,,Device shows offline while pet is home
+PC-0026,2026-08-08,APAC,Singapore,SmartCollar V2,2.0.4,Health alerts,Medium,Open,Email,,Activity score stuck at zero
+PC-0027,2026-08-09,EMEA,Spain,SmartLeash Connect,n/a,Health alerts,Critical,Resolved,App,2026-08-13,Heart-rate alert seems wrong during play
+PC-0028,2026-08-09,Americas,United States,SmartLeash Connect,n/a,Fit & comfort,Medium,In Progress,Chat,,Clasp opens on its own
+PC-0029,2026-08-09,APAC,Australia,SmartCollar V2,2.0.4,Fit & comfort,Medium,Resolved,Email,2026-08-18,Clasp opens on its own
+PC-0030,2026-08-10,EMEA,France,SmartCollar V2,2.0.3,Health alerts,Low,Resolved,Email,2026-08-16,Temperature alert sent repeatedly
+PC-0031,2026-08-10,EMEA,Germany,HomeBase Station,n/a,Battery,Medium,Resolved,Email,2026-08-13,Battery drains in under a day
+PC-0032,2026-08-10,EMEA,Germany,SmartCollar V2,2.0.3,Fit & comfort,Medium,Open,Phone,,Collar too heavy for small breed
+PC-0033,2026-08-10,Americas,United States,SmartCollar V2,2.0.3,Battery,Medium,Resolved,Chat,2026-08-16,Charging dock not recognized
+PC-0034,2026-08-10,Americas,United States,SmartCollar V1,1.8.2,Connectivity,Medium,In Progress,Chat,,Bluetooth pairing fails after update
+PC-0035,2026-08-10,Americas,Canada,SmartCollar V2,2.0.3,Connectivity,High,Resolved,Email,2026-08-18,Device shows offline while pet is home
+PC-0036,2026-08-10,APAC,South Korea,SmartCollar V1,1.8.2,Health alerts,Medium,In Progress,Phone,,Temperature alert sent repeatedly
+PC-0037,2026-08-11,EMEA,Spain,SmartCollar V1,1.8.2,Battery,Low,Resolved,Phone,2026-08-19,Charging dock not recognized
+PC-0038,2026-08-11,Americas,Brazil,SmartCollar V1,1.8.2,Connectivity,High,Resolved,App,2026-08-19,Device shows offline while pet is home
+PC-0039,2026-08-11,Americas,Brazil,SmartCollar V1,1.8.2,GPS accuracy,Medium,Open,Phone,,Walk route not recorded
+PC-0040,2026-08-13,EMEA,Netherlands,SmartCollar V2,2.0.4,App sync,Medium,Resolved,Phone,2026-08-22,App stuck on syncing
+PC-0041,2026-08-13,EMEA,Spain,HomeBase Station,n/a,Health alerts,Medium,Resolved,Chat,2026-08-16,Heart-rate alert seems wrong during play
+PC-0042,2026-08-13,EMEA,Spain,SmartCollar V2,2.0.3,Battery,High,Resolved,Phone,2026-08-19,Charging dock not recognized
+PC-0043,2026-08-13,Americas,Mexico,SmartCollar V1,1.8.2,Fit & comfort,Medium,Resolved,Chat,2026-08-17,Strap irritating pet's neck
+PC-0044,2026-08-13,Americas,Mexico,SmartCollar V1,1.8.2,GPS accuracy,Low,Resolved,Email,2026-08-21,Walk route not recorded
+PC-0045,2026-08-14,EMEA,Spain,SmartCollar V2,2.0.4,App sync,Medium,Open,Chat,,Activity history missing for last week
+PC-0046,2026-08-14,APAC,Japan,HomeBase Station,n/a,GPS accuracy,Medium,Resolved,Chat,2026-08-23,Geofence alert triggered while pet was inside
+PC-0047,2026-08-15,APAC,South Korea,SmartLeash Connect,n/a,App sync,Low,Resolved,Chat,2026-08-22,App stuck on syncing
+PC-0048,2026-08-16,Americas,Canada,SmartCollar V1,1.8.2,Health alerts,Medium,Resolved,Email,2026-08-24,Heart-rate alert seems wrong during play
+PC-0049,2026-08-16,APAC,Japan,SmartCollar V2,2.0.4,Connectivity,High,Resolved,Phone,2026-08-24,Device shows offline while pet is home
+PC-0050,2026-08-16,APAC,South Korea,SmartCollar V1,1.8.2,Fit & comfort,Low,Resolved,Phone,2026-08-21,Strap irritating pet's neck
+PC-0051,2026-08-17,EMEA,Germany,SmartCollar V2,2.0.3,Health alerts,Low,In Progress,Phone,,Activity score stuck at zero
+PC-0052,2026-08-17,Americas,Mexico,SmartLeash Connect,n/a,Connectivity,High,Open,Chat,,Bluetooth pairing fails after update
+PC-0053,2026-08-17,Americas,Brazil,SmartCollar V1,1.8.2,Connectivity,Medium,In Progress,Phone,,Collar disconnects from the app every few minutes
+PC-0054,2026-08-18,EMEA,Germany,SmartLeash Connect,n/a,Fit & comfort,Critical,Resolved,App,2026-08-26,Collar too heavy for small breed
+PC-0055,2026-08-18,Americas,Canada,SmartCollar V2,2.0.3,Battery,Low,Open,Email,,Battery drains in under a day
+PC-0056,2026-08-18,Americas,Mexico,SmartCollar V2,2.0.3,Fit & comfort,Medium,Open,Chat,,Strap irritating pet's neck
+PC-0057,2026-08-19,EMEA,Netherlands,SmartCollar V1,1.8.2,Health alerts,Medium,Resolved,Phone,2026-08-25,Heart-rate alert seems wrong during play
+PC-0058,2026-08-19,Americas,Canada,SmartCollar V2,2.0.4,Connectivity,Medium,Resolved,Chat,2026-08-27,Bluetooth pairing fails after update
+PC-0059,2026-08-19,Americas,Brazil,HomeBase Station,n/a,Connectivity,Medium,In Progress,App,,Device shows offline while pet is home
+PC-0060,2026-08-19,Americas,Mexico,SmartCollar V1,1.8.2,Battery,Medium,Resolved,App,2026-08-24,Battery drains in under a day
+PC-0061,2026-08-20,EMEA,Germany,SmartCollar V2,2.0.4,Fit & comfort,Low,Resolved,Email,2026-08-28,Clasp opens on its own
+PC-0062,2026-08-20,EMEA,Netherlands,HomeBase Station,n/a,Connectivity,Medium,Resolved,App,2026-08-29,Collar disconnects from the app every few minutes
+PC-0063,2026-08-20,EMEA,France,HomeBase Station,n/a,App sync,Medium,Resolved,Email,2026-08-25,Pet profile reset after login
+PC-0064,2026-08-20,Americas,Brazil,SmartCollar V2,2.0.3,Fit & comfort,High,Resolved,Email,2026-08-23,Strap irritating pet's neck
+PC-0065,2026-08-20,Americas,Canada,SmartCollar V1,1.8.2,Battery,Medium,In Progress,App,,Battery drains in under a day
+PC-0066,2026-08-20,APAC,Australia,SmartLeash Connect,n/a,App sync,Medium,Open,Chat,,Pet profile reset after login
+PC-0067,2026-08-20,APAC,Singapore,SmartCollar V1,1.8.2,Battery,High,Resolved,Chat,2026-08-28,Charging dock not recognized
+PC-0068,2026-08-21,EMEA,Germany,SmartCollar V2,2.0.4,Battery,Medium,Resolved,Chat,2026-08-24,Battery drains in under a day
+PC-0069,2026-08-21,EMEA,Spain,SmartCollar V2,2.0.3,Connectivity,High,Open,Phone,,Bluetooth pairing fails after update
+PC-0070,2026-08-21,EMEA,Germany,SmartLeash Connect,n/a,Fit & comfort,Low,Resolved,Phone,2026-08-26,Clasp opens on its own
+PC-0071,2026-08-21,EMEA,France,SmartCollar V1,1.8.2,Battery,Low,Resolved,Chat,2026-08-29,Collar won't hold a charge overnight
+PC-0072,2026-08-21,APAC,Australia,SmartCollar V2,2.0.4,Battery,Medium,Resolved,Chat,2026-08-28,Battery drains in under a day
+PC-0073,2026-08-22,EMEA,Spain,SmartLeash Connect,n/a,Health alerts,Medium,Resolved,App,2026-08-24,Heart-rate alert seems wrong during play
+PC-0074,2026-08-22,Americas,Canada,HomeBase Station,n/a,App sync,Low,Resolved,Phone,2026-08-24,App stuck on syncing
+PC-0075,2026-08-22,Americas,Mexico,SmartCollar V1,1.8.2,Fit & comfort,High,Resolved,Chat,2026-08-24,Collar too heavy for small breed
+PC-0076,2026-08-22,APAC,Japan,SmartCollar V2,2.0.3,GPS accuracy,High,Resolved,Chat,2026-08-31,Location jumps several blocks
+PC-0077,2026-08-22,APAC,Japan,SmartCollar V2,2.0.4,Fit & comfort,Low,In Progress,App,,Collar too heavy for small breed
+PC-0078,2026-08-23,EMEA,Germany,SmartCollar V2,2.0.4,App sync,Medium,In Progress,Email,,App stuck on syncing
+PC-0079,2026-08-23,EMEA,Netherlands,SmartCollar V1,1.8.2,Fit & comfort,Medium,Resolved,App,2026-08-30,Collar too heavy for small breed
+PC-0080,2026-08-23,EMEA,France,HomeBase Station,n/a,Health alerts,Low,Resolved,Email,2026-09-01,Heart-rate alert seems wrong during play
+PC-0081,2026-08-23,Americas,Mexico,SmartCollar V1,1.8.2,Battery,Medium,Resolved,Chat,2026-08-28,Collar won't hold a charge overnight
+PC-0082,2026-08-23,Americas,Brazil,SmartLeash Connect,n/a,App sync,Medium,Open,Email,,Activity history missing for last week
+PC-0083,2026-08-24,EMEA,France,SmartCollar V2,2.0.4,Health alerts,Medium,Resolved,Email,2026-08-26,Temperature alert sent repeatedly
+PC-0084,2026-08-24,EMEA,Spain,SmartCollar V2,2.0.3,GPS accuracy,Low,In Progress,Phone,,Location jumps several blocks
+PC-0085,2026-08-24,EMEA,France,SmartCollar V1,1.8.2,App sync,Medium,Open,Email,,Pet profile reset after login
+PC-0086,2026-08-24,EMEA,Germany,SmartCollar V2,2.0.4,Battery,Low,Resolved,App,2026-08-31,Battery drains in under a day
+PC-0087,2026-08-24,Americas,Mexico,SmartCollar V2,2.0.4,GPS accuracy,Medium,Resolved,Chat,2026-08-30,Location jumps several blocks
+PC-0088,2026-08-24,Americas,Brazil,SmartLeash Connect,n/a,GPS accuracy,Low,Resolved,Chat,2026-09-01,Walk route not recorded
+PC-0089,2026-08-24,APAC,Japan,SmartCollar V1,1.8.2,Battery,Medium,Resolved,Email,2026-09-01,Collar won't hold a charge overnight
+PC-0090,2026-08-25,Americas,United States,SmartCollar V1,1.8.2,App sync,High,Open,Chat,,Activity history missing for last week
+PC-0091,2026-08-25,Americas,Mexico,SmartCollar V2,2.0.4,Fit & comfort,High,Open,Email,,Collar too heavy for small breed
+PC-0092,2026-08-26,EMEA,France,SmartLeash Connect,n/a,App sync,Low,In Progress,Email,,Activity history missing for last week
+PC-0093,2026-08-26,EMEA,France,HomeBase Station,n/a,App sync,Medium,Resolved,App,2026-08-28,App stuck on syncing
+PC-0094,2026-08-26,EMEA,France,SmartCollar V2,2.0.3,Fit & comfort,Low,Resolved,App,2026-08-28,Clasp opens on its own
+PC-0095,2026-08-27,Americas,Brazil,SmartCollar V2,2.0.4,Battery,Low,In Progress,Email,,Battery drains in under a day
+PC-0096,2026-08-28,EMEA,Germany,SmartCollar V2,2.0.4,Health alerts,Low,Resolved,Email,2026-08-30,Temperature alert sent repeatedly
+PC-0097,2026-08-28,Americas,United States,SmartCollar V1,1.8.2,Connectivity,Medium,Resolved,Email,2026-08-29,Device shows offline while pet is home
+PC-0098,2026-08-28,APAC,Australia,HomeBase Station,n/a,Health alerts,Low,In Progress,Email,,Activity score stuck at zero
+PC-0099,2026-08-29,EMEA,Spain,SmartLeash Connect,n/a,Battery,High,Resolved,Chat,2026-09-01,Battery drains in under a day
+PC-0100,2026-08-29,Americas,United States,SmartCollar V2,2.0.4,Connectivity,Low,Resolved,App,2026-09-07,Device shows offline while pet is home
+PC-0101,2026-08-30,EMEA,Netherlands,SmartLeash Connect,n/a,Health alerts,Low,Resolved,Chat,2026-09-05,Temperature alert sent repeatedly
+PC-0102,2026-08-30,EMEA,United Kingdom,SmartLeash Connect,n/a,GPS accuracy,High,Open,App,,Geofence alert triggered while pet was inside
+PC-0103,2026-08-30,Americas,Canada,SmartLeash Connect,n/a,GPS accuracy,Medium,Resolved,Chat,2026-09-01,Location jumps several blocks
+PC-0104,2026-08-30,Americas,Brazil,SmartLeash Connect,n/a,Health alerts,Low,Resolved,App,2026-08-31,Heart-rate alert seems wrong during play
+PC-0105,2026-08-30,Americas,Brazil,HomeBase Station,n/a,Health alerts,Medium,In Progress,Email,,Activity score stuck at zero
+PC-0106,2026-08-30,Americas,Brazil,SmartCollar V2,2.0.4,Connectivity,Low,Resolved,Phone,2026-09-03,Bluetooth pairing fails after update
+PC-0107,2026-08-30,Americas,Canada,SmartCollar V2,2.0.3,Fit & comfort,High,Resolved,App,2026-09-03,Collar too heavy for small breed
+PC-0108,2026-08-31,EMEA,Netherlands,SmartCollar V1,1.8.2,GPS accuracy,Low,Resolved,Chat,2026-09-06,Location jumps several blocks
+PC-0109,2026-08-31,EMEA,Germany,SmartCollar V1,1.8.2,Health alerts,High,In Progress,Email,,Heart-rate alert seems wrong during play
+PC-0110,2026-08-31,Americas,Mexico,SmartCollar V1,1.8.2,Battery,High,Resolved,App,2026-09-01,Collar won't hold a charge overnight
+PC-0111,2026-08-31,APAC,Singapore,SmartCollar V2,2.0.3,Health alerts,Low,Resolved,Phone,2026-09-09,Activity score stuck at zero
+PC-0112,2026-09-01,EMEA,France,SmartCollar V2,2.0.4,Fit & comfort,Low,Resolved,Chat,2026-09-07,Clasp opens on its own
+PC-0113,2026-09-01,Americas,United States,SmartCollar V1,1.8.2,Fit & comfort,Low,Open,Phone,,Strap irritating pet's neck
+PC-0114,2026-09-02,EMEA,Netherlands,HomeBase Station,n/a,Connectivity,Medium,Resolved,Phone,2026-09-05,Bluetooth pairing fails after update
+PC-0115,2026-09-02,EMEA,Netherlands,SmartCollar V1,1.8.2,GPS accuracy,Medium,Resolved,App,2026-09-03,Walk route not recorded
+PC-0116,2026-09-02,Americas,Mexico,SmartCollar V1,1.8.2,App sync,Low,Resolved,Chat,2026-09-11,App stuck on syncing
+PC-0117,2026-09-02,APAC,Australia,SmartCollar V1,1.8.2,Fit & comfort,Medium,Resolved,Phone,2026-09-04,Collar too heavy for small breed
+PC-0118,2026-09-03,EMEA,Germany,SmartLeash Connect,n/a,GPS accuracy,High,Resolved,Email,2026-09-07,Location jumps several blocks
+PC-0119,2026-09-03,APAC,Singapore,HomeBase Station,n/a,GPS accuracy,Low,Resolved,App,2026-09-12,Geofence alert triggered while pet was inside
+PC-0120,2026-09-04,EMEA,Netherlands,SmartLeash Connect,n/a,Battery,Low,Resolved,App,2026-09-06,Collar won't hold a charge overnight
+PC-0121,2026-09-04,EMEA,Germany,SmartCollar V1,1.8.2,GPS accuracy,Low,Resolved,Chat,2026-09-10,Geofence alert triggered while pet was inside
+PC-0122,2026-09-05,EMEA,United Kingdom,SmartLeash Connect,n/a,Fit & comfort,Low,Resolved,Email,2026-09-14,Collar too heavy for small breed
+PC-0123,2026-09-06,EMEA,United Kingdom,HomeBase Station,n/a,Battery,Low,Open,App,,Charging dock not recognized
+PC-0124,2026-09-06,Americas,Brazil,HomeBase Station,n/a,Fit & comfort,Medium,Resolved,Chat,2026-09-11,Clasp opens on its own
+PC-0125,2026-09-06,APAC,Japan,SmartCollar V2,2.0.4,Fit & comfort,High,Resolved,Email,2026-09-07,Strap irritating pet's neck
+PC-0126,2026-09-06,APAC,Japan,SmartLeash Connect,n/a,Fit & comfort,Low,Open,Phone,,Collar too heavy for small breed
+PC-0127,2026-09-07,EMEA,France,SmartCollar V2,2.0.4,Fit & comfort,Medium,Resolved,Chat,2026-09-08,Strap irritating pet's neck
+PC-0128,2026-09-07,EMEA,France,SmartCollar V2,2.0.3,App sync,High,In Progress,Email,,Activity history missing for last week
+PC-0129,2026-09-07,APAC,Japan,SmartCollar V2,2.0.3,App sync,High,Resolved,App,2026-09-11,Pet profile reset after login
+PC-0130,2026-09-08,EMEA,Spain,SmartCollar V1,1.8.2,Health alerts,High,Resolved,App,2026-09-09,Temperature alert sent repeatedly
+PC-0131,2026-09-08,EMEA,France,SmartLeash Connect,n/a,App sync,Low,Resolved,Chat,2026-09-16,Pet profile reset after login
+PC-0132,2026-09-08,APAC,Australia,SmartCollar V1,1.8.2,App sync,Low,Resolved,Phone,2026-09-11,Pet profile reset after login
+PC-0133,2026-09-09,EMEA,United Kingdom,SmartCollar V2,2.0.3,Fit & comfort,Medium,In Progress,Email,,Collar too heavy for small breed
+PC-0134,2026-09-09,EMEA,France,SmartCollar V2,2.0.3,Fit & comfort,Low,Resolved,App,2026-09-18,Clasp opens on its own
+PC-0135,2026-09-09,EMEA,Germany,SmartCollar V1,1.8.2,Connectivity,Low,Resolved,Email,2026-09-13,Bluetooth pairing fails after update
+PC-0136,2026-09-09,EMEA,Netherlands,HomeBase Station,n/a,App sync,Medium,Resolved,Email,2026-09-12,App stuck on syncing
+PC-0137,2026-09-09,EMEA,France,SmartCollar V1,1.8.2,Health alerts,Low,Resolved,Phone,2026-09-16,Activity score stuck at zero
+PC-0138,2026-09-09,Americas,United States,SmartCollar V1,1.8.2,Fit & comfort,Critical,Resolved,App,2026-09-13,Collar too heavy for small breed
+PC-0139,2026-09-10,Americas,Brazil,HomeBase Station,n/a,App sync,Low,Open,Email,,Pet profile reset after login
+PC-0140,2026-09-11,EMEA,United Kingdom,SmartCollar V2,2.0.3,Battery,Medium,Resolved,Phone,2026-09-17,Collar won't hold a charge overnight
+PC-0141,2026-09-11,EMEA,Germany,SmartCollar V1,1.8.2,Connectivity,Low,Resolved,Email,2026-09-17,Collar disconnects from the app every few minutes
+PC-0142,2026-09-11,APAC,Japan,SmartCollar V2,2.0.4,App sync,Medium,Resolved,App,2026-09-18,Activity history missing for last week
+PC-0143,2026-09-12,EMEA,Germany,HomeBase Station,n/a,GPS accuracy,Medium,Resolved,Chat,2026-09-19,Walk route not recorded
+PC-0144,2026-09-12,EMEA,Spain,HomeBase Station,n/a,GPS accuracy,Medium,Resolved,App,2026-09-18,Walk route not recorded
+PC-0145,2026-09-12,Americas,United States,SmartCollar V1,1.8.2,Connectivity,Low,Resolved,Chat,2026-09-16,Bluetooth pairing fails after update
+PC-0146,2026-09-12,Americas,Brazil,SmartCollar V2,2.0.3,Fit & comfort,High,Resolved,Chat,2026-09-14,Strap irritating pet's neck
+PC-0147,2026-09-12,APAC,Japan,SmartCollar V2,2.0.3,Connectivity,Medium,Resolved,App,2026-09-18,Collar disconnects from the app every few minutes
+PC-0148,2026-09-13,EMEA,Netherlands,SmartCollar V1,1.8.2,Health alerts,Low,In Progress,Email,,Heart-rate alert seems wrong during play
+PC-0149,2026-09-14,EMEA,Germany,SmartCollar V2,2.0.3,GPS accuracy,Medium,Resolved,Email,2026-09-21,Walk route not recorded
+PC-0150,2026-09-14,Americas,Canada,SmartCollar V2,2.0.4,App sync,Medium,In Progress,Email,,Activity history missing for last week
+PC-0151,2026-09-15,Americas,United States,HomeBase Station,n/a,GPS accuracy,Medium,Resolved,Chat,2026-09-19,Geofence alert triggered while pet was inside
+PC-0152,2026-09-15,Americas,Brazil,SmartCollar V2,2.0.4,Fit & comfort,Medium,Resolved,Phone,2026-09-20,Strap irritating pet's neck
+PC-0153,2026-09-16,EMEA,France,SmartLeash Connect,n/a,App sync,Medium,Resolved,Phone,2026-09-24,App stuck on syncing
+PC-0154,2026-09-16,EMEA,France,SmartLeash Connect,n/a,Health alerts,Low,Resolved,Phone,2026-09-21,Activity score stuck at zero
+PC-0155,2026-09-16,EMEA,France,HomeBase Station,n/a,Health alerts,Low,Resolved,App,2026-09-23,Temperature alert sent repeatedly
+PC-0156,2026-09-16,Americas,Canada,SmartCollar V2,2.0.4,Fit & comfort,Low,Open,Phone,,Collar too heavy for small breed
+PC-0157,2026-09-16,Americas,Mexico,SmartLeash Connect,n/a,App sync,High,In Progress,App,,Pet profile reset after login
+PC-0158,2026-09-16,APAC,Singapore,SmartCollar V2,2.0.3,GPS accuracy,Low,Resolved,App,2026-09-24,Walk route not recorded
+PC-0159,2026-09-16,APAC,Australia,SmartCollar V2,2.0.3,App sync,Medium,Resolved,Email,2026-09-21,App stuck on syncing
+PC-0160,2026-09-17,EMEA,United Kingdom,HomeBase Station,n/a,Health alerts,Low,Resolved,Email,2026-09-19,Heart-rate alert seems wrong during play
+PC-0161,2026-09-17,EMEA,France,SmartCollar V2,2.0.3,Battery,Medium,Resolved,App,2026-09-19,Charging dock not recognized
+PC-0162,2026-09-17,APAC,Australia,SmartCollar V2,2.0.3,Fit & comfort,Medium,Resolved,App,2026-09-21,Collar too heavy for small breed
+PC-0163,2026-09-17,APAC,Singapore,SmartCollar V2,2.0.4,GPS accuracy,Medium,Open,Email,,Location jumps several blocks
+PC-0164,2026-09-18,EMEA,Spain,HomeBase Station,n/a,App sync,Medium,Resolved,Phone,2026-09-19,Pet profile reset after login
+PC-0165,2026-09-18,EMEA,Germany,SmartCollar V2,2.0.4,App sync,Medium,Resolved,Chat,2026-09-25,Activity history missing for last week
+PC-0166,2026-09-18,EMEA,Germany,SmartCollar V2,2.0.3,GPS accuracy,Medium,Resolved,Email,2026-09-27,Walk route not recorded
+PC-0167,2026-09-18,EMEA,France,SmartCollar V1,1.8.2,App sync,Low,Resolved,App,2026-09-27,Pet profile reset after login
+PC-0168,2026-09-18,Americas,Canada,SmartCollar V1,1.8.2,Connectivity,Low,Resolved,Chat,2026-09-23,Device shows offline while pet is home
+PC-0169,2026-09-18,APAC,Singapore,SmartCollar V1,1.8.2,App sync,Medium,Resolved,Chat,2026-09-22,App stuck on syncing
+PC-0170,2026-09-19,EMEA,United Kingdom,SmartCollar V2,2.0.3,Health alerts,Low,Resolved,App,2026-09-28,Heart-rate alert seems wrong during play
+PC-0171,2026-09-19,Americas,Mexico,SmartCollar V1,1.8.2,Battery,Medium,Resolved,Chat,2026-09-22,Charging dock not recognized
+PC-0172,2026-09-19,Americas,Canada,SmartLeash Connect,n/a,App sync,Low,Resolved,Phone,2026-09-27,App stuck on syncing
+PC-0173,2026-09-20,EMEA,United Kingdom,HomeBase Station,n/a,Fit & comfort,High,In Progress,Phone,,Collar too heavy for small breed
+PC-0174,2026-09-20,EMEA,Spain,HomeBase Station,n/a,GPS accuracy,Low,Resolved,App,2026-09-23,Location jumps several blocks
+PC-0175,2026-09-20,Americas,Canada,SmartCollar V1,1.8.2,Health alerts,High,Resolved,Chat,2026-09-28,Heart-rate alert seems wrong during play
+PC-0176,2026-09-21,Americas,United States,HomeBase Station,n/a,Fit & comfort,Medium,Resolved,Phone,2026-09-22,Strap irritating pet's neck
+PC-0177,2026-09-21,Americas,Mexico,HomeBase Station,n/a,Health alerts,High,Resolved,Chat,2026-09-25,Temperature alert sent repeatedly
+PC-0178,2026-09-21,Americas,United States,HomeBase Station,n/a,Fit & comfort,Medium,In Progress,Phone,,Clasp opens on its own
+PC-0179,2026-09-21,APAC,Singapore,SmartCollar V1,1.8.2,Fit & comfort,Medium,In Progress,Chat,,Collar too heavy for small breed
+PC-0180,2026-09-22,EMEA,Spain,SmartCollar V2,2.0.3,Health alerts,High,Resolved,Phone,2026-09-30,Activity score stuck at zero
+PC-0181,2026-09-22,Americas,United States,SmartCollar V1,1.8.2,GPS accuracy,Medium,Resolved,App,2026-10-01,Geofence alert triggered while pet was inside
+PC-0182,2026-09-22,Americas,Mexico,SmartCollar V2,2.0.3,GPS accuracy,Medium,Resolved,Chat,2026-09-24,Geofence alert triggered while pet was inside
+PC-0183,2026-09-23,EMEA,Germany,HomeBase Station,n/a,Connectivity,Low,Resolved,Phone,2026-10-01,Device shows offline while pet is home
+PC-0184,2026-09-23,Americas,United States,SmartCollar V2,2.0.3,Battery,High,Resolved,Email,2026-09-26,Charging dock not recognized
+PC-0185,2026-09-24,EMEA,United Kingdom,SmartCollar V1,1.8.2,Fit & comfort,Low,Resolved,Phone,2026-10-03,Collar too heavy for small breed
+PC-0186,2026-09-24,APAC,Australia,SmartCollar V1,1.8.2,GPS accuracy,Low,Resolved,Chat,2026-09-26,Geofence alert triggered while pet was inside
+PC-0187,2026-09-24,APAC,Australia,SmartCollar V1,1.8.2,GPS accuracy,High,Open,Email,,Location jumps several blocks
+PC-0188,2026-09-25,EMEA,Netherlands,HomeBase Station,n/a,Health alerts,Medium,In Progress,Chat,,Heart-rate alert seems wrong during play
+PC-0189,2026-09-25,EMEA,Netherlands,SmartCollar V2,2.0.3,Fit & comfort,Low,Resolved,Email,2026-10-03,Collar too heavy for small breed
+PC-0190,2026-09-25,EMEA,Spain,HomeBase Station,n/a,App sync,Low,Resolved,App,2026-10-03,Pet profile reset after login
+PC-0191,2026-09-26,EMEA,Spain,SmartCollar V1,1.8.2,GPS accuracy,Medium,Resolved,App,2026-09-28,Geofence alert triggered while pet was inside
+PC-0192,2026-09-26,EMEA,United Kingdom,HomeBase Station,n/a,Connectivity,Medium,In Progress,Phone,,Device shows offline while pet is home
+PC-0193,2026-09-26,EMEA,United Kingdom,SmartCollar V2,2.0.4,Connectivity,High,Resolved,Phone,2026-10-05,Collar disconnects from the app every few minutes
+PC-0194,2026-09-27,EMEA,Spain,SmartCollar V2,2.0.4,App sync,Medium,Resolved,App,2026-10-05,App stuck on syncing
+PC-0195,2026-09-28,Americas,United States,SmartCollar V2,2.0.3,Battery,High,Resolved,Chat,2026-09-29,Collar won't hold a charge overnight
+PC-0196,2026-09-28,Americas,Brazil,SmartCollar V1,1.8.2,Fit & comfort,High,Resolved,App,2026-10-06,Clasp opens on its own
+PC-0197,2026-09-28,APAC,South Korea,SmartCollar V1,1.8.2,Fit & comfort,Low,Open,App,,Strap irritating pet's neck
+PC-0198,2026-09-29,EMEA,United Kingdom,SmartCollar V2,2.0.4,App sync,Medium,Resolved,Chat,2026-10-08,Pet profile reset after login
+PC-0199,2026-09-29,EMEA,Netherlands,SmartCollar V1,1.8.2,GPS accuracy,Medium,Resolved,App,2026-10-02,Location jumps several blocks
+PC-0200,2026-09-29,Americas,Brazil,SmartCollar V2,2.0.4,Fit & comfort,Medium,Resolved,App,2026-10-08,Strap irritating pet's neck
+PC-0201,2026-09-29,Americas,Mexico,SmartCollar V2,2.0.3,Connectivity,Medium,Resolved,App,2026-10-02,Bluetooth pairing fails after update
+PC-0202,2026-09-30,EMEA,Spain,SmartLeash Connect,n/a,App sync,Medium,Resolved,Phone,2026-10-06,Activity history missing for last week
+PC-0203,2026-09-30,EMEA,France,SmartCollar V1,1.8.2,GPS accuracy,Medium,Resolved,Phone,2026-10-07,Geofence alert triggered while pet was inside
+PC-0204,2026-09-30,Americas,Brazil,SmartCollar V1,1.8.2,GPS accuracy,Medium,In Progress,App,,Walk route not recorded
+PC-0205,2026-10-01,EMEA,United Kingdom,SmartCollar V1,1.8.2,Fit & comfort,Medium,Resolved,Email,2026-10-10,Strap irritating pet's neck
+PC-0206,2026-10-01,APAC,South Korea,SmartCollar V2,2.0.4,Fit & comfort,High,Resolved,App,2026-10-09,Clasp opens on its own
+PC-0207,2026-10-02,EMEA,Spain,SmartCollar V1,1.8.2,GPS accuracy,Critical,Resolved,Phone,2026-10-05,Location jumps several blocks
+PC-0208,2026-10-02,EMEA,United Kingdom,HomeBase Station,n/a,Health alerts,Medium,Resolved,App,2026-10-09,Temperature alert sent repeatedly
+PC-0209,2026-10-02,EMEA,United Kingdom,SmartCollar V1,1.8.2,Fit & comfort,Low,In Progress,App,,Strap irritating pet's neck
+PC-0210,2026-10-02,Americas,Canada,SmartLeash Connect,n/a,App sync,Medium,Resolved,Chat,2026-10-05,Activity history missing for last week
+PC-0211,2026-10-02,Americas,Mexico,SmartCollar V2,2.0.4,Connectivity,High,Resolved,Chat,2026-10-03,Collar disconnects from the app every few minutes
+PC-0212,2026-10-03,EMEA,Germany,SmartCollar V2,2.0.3,GPS accuracy,Medium,Resolved,App,2026-10-07,Geofence alert triggered while pet was inside
+PC-0213,2026-10-04,EMEA,Germany,SmartCollar V2,2.0.4,Health alerts,High,Resolved,App,2026-10-10,Heart-rate alert seems wrong during play
+PC-0214,2026-10-04,Americas,United States,SmartCollar V1,1.8.2,Health alerts,Low,Resolved,App,2026-10-07,Temperature alert sent repeatedly
+PC-0215,2026-10-05,EMEA,United Kingdom,SmartCollar V2,2.0.3,App sync,Low,In Progress,Chat,,Pet profile reset after login
+PC-0216,2026-10-05,EMEA,Spain,HomeBase Station,n/a,Fit & comfort,Critical,Resolved,App,2026-10-13,Collar too heavy for small breed
+PC-0217,2026-10-05,EMEA,France,SmartCollar V1,1.8.2,Battery,Low,In Progress,Email,,Collar won't hold a charge overnight
+PC-0218,2026-10-05,Americas,Brazil,SmartCollar V2,2.0.3,App sync,Low,Resolved,App,2026-10-13,Pet profile reset after login
+PC-0219,2026-10-06,EMEA,France,SmartCollar V2,2.0.3,App sync,Medium,Resolved,Phone,2026-10-08,Activity history missing for last week
+PC-0220,2026-10-06,EMEA,United Kingdom,SmartCollar V2,2.0.4,GPS accuracy,High,Open,App,,Geofence alert triggered while pet was inside
+PC-0221,2026-10-06,EMEA,France,HomeBase Station,n/a,Connectivity,High,Resolved,Phone,2026-10-10,Bluetooth pairing fails after update
+PC-0222,2026-10-06,EMEA,Spain,SmartLeash Connect,n/a,Connectivity,Medium,In Progress,App,,Device shows offline while pet is home
+PC-0223,2026-10-06,EMEA,France,HomeBase Station,n/a,Health alerts,Medium,Resolved,Email,2026-10-09,Heart-rate alert seems wrong during play
+PC-0224,2026-10-06,EMEA,United Kingdom,SmartCollar V2,2.0.3,Fit & comfort,Medium,In Progress,Email,,Strap irritating pet's neck
+PC-0225,2026-10-06,Americas,Brazil,HomeBase Station,n/a,Connectivity,Medium,Resolved,App,2026-10-10,Bluetooth pairing fails after update
+PC-0226,2026-10-06,Americas,Mexico,SmartCollar V2,2.0.4,App sync,Medium,Resolved,Phone,2026-10-15,Activity history missing for last week
+PC-0227,2026-10-06,APAC,Australia,HomeBase Station,n/a,App sync,Low,Open,Email,,App stuck on syncing
+PC-0228,2026-10-06,APAC,Singapore,SmartCollar V2,2.0.3,Health alerts,Medium,Resolved,Email,2026-10-15,Activity score stuck at zero
+PC-0229,2026-10-07,EMEA,United Kingdom,HomeBase Station,n/a,Fit & comfort,Critical,Resolved,Chat,2026-10-10,Strap irritating pet's neck
+PC-0230,2026-10-08,EMEA,France,SmartCollar V1,1.8.2,Fit & comfort,Critical,Resolved,App,2026-10-12,Strap irritating pet's neck
+PC-0231,2026-10-08,Americas,Brazil,SmartCollar V2,2.0.3,Battery,High,Resolved,Email,2026-10-16,Battery drains in under a day
+PC-0232,2026-10-08,APAC,Japan,SmartCollar V2,2.0.3,Health alerts,High,Resolved,Phone,2026-10-14,Activity score stuck at zero
+PC-0233,2026-10-09,EMEA,Germany,HomeBase Station,n/a,GPS accuracy,Medium,Resolved,Chat,2026-10-11,Location jumps several blocks
+PC-0234,2026-10-09,EMEA,France,SmartCollar V2,2.0.3,App sync,High,Resolved,Email,2026-10-16,App stuck on syncing
+PC-0235,2026-10-09,APAC,South Korea,HomeBase Station,n/a,GPS accuracy,Low,Resolved,App,2026-10-17,Walk route not recorded
+PC-0236,2026-10-10,EMEA,United Kingdom,SmartCollar V2,2.0.4,Fit & comfort,Medium,Resolved,Email,2026-10-18,Clasp opens on its own
+PC-0237,2026-10-10,EMEA,Germany,HomeBase Station,n/a,App sync,Medium,Resolved,Phone,2026-10-14,Activity history missing for last week
+PC-0238,2026-10-11,EMEA,Spain,SmartLeash Connect,n/a,Connectivity,Low,Resolved,App,2026-10-13,Bluetooth pairing fails after update
+PC-0239,2026-10-11,Americas,Canada,SmartCollar V2,2.0.4,Battery,Low,Resolved,Phone,2026-10-20,Charging dock not recognized
+PC-0240,2026-10-11,APAC,South Korea,SmartCollar V2,2.1.0,Connectivity,High,Open,Email,,Bluetooth pairing fails after update
+PC-0241,2026-10-11,EMEA,Germany,SmartCollar V2,2.1.0,App sync,Medium,Resolved,App,2026-10-12,Activity history missing for last week
+PC-0242,2026-10-12,EMEA,Spain,HomeBase Station,n/a,Fit & comfort,High,Resolved,Phone,2026-10-21,Clasp opens on its own
+PC-0243,2026-10-12,Americas,Canada,SmartCollar V2,2.0.3,App sync,Medium,Resolved,Chat,2026-10-13,App stuck on syncing
+PC-0244,2026-10-12,APAC,South Korea,SmartCollar V1,1.8.2,GPS accuracy,Low,Resolved,Email,2026-10-21,Walk route not recorded
+PC-0245,2026-10-12,APAC,Japan,SmartCollar V1,1.8.2,App sync,Medium,Resolved,Chat,2026-10-13,Activity history missing for last week
+PC-0246,2026-10-12,APAC,Singapore,SmartCollar V2,2.1.0,Connectivity,High,Resolved,Email,2026-10-17,Device shows offline while pet is home
+PC-0247,2026-10-12,EMEA,Germany,SmartCollar V2,2.1.0,Connectivity,Medium,Resolved,Email,2026-10-16,Bluetooth pairing fails after update
+PC-0248,2026-10-13,EMEA,France,SmartCollar V1,1.8.2,GPS accuracy,Medium,Resolved,Email,2026-10-14,Location jumps several blocks
+PC-0249,2026-10-13,EMEA,Germany,SmartCollar V2,2.0.4,Battery,Medium,Resolved,Phone,2026-10-18,Collar won't hold a charge overnight
+PC-0250,2026-10-13,Americas,United States,SmartCollar V1,1.8.2,App sync,Low,Resolved,Chat,2026-10-20,Pet profile reset after login
+PC-0251,2026-10-13,APAC,Japan,HomeBase Station,n/a,Fit & comfort,Low,Resolved,Chat,2026-10-21,Strap irritating pet's neck
+PC-0252,2026-10-13,APAC,Japan,SmartCollar V2,2.0.4,Battery,Critical,Resolved,Phone,2026-10-20,Battery drains in under a day
+PC-0253,2026-10-13,EMEA,United Kingdom,SmartCollar V2,2.1.0,App sync,High,Resolved,App,2026-10-22,Pet profile reset after login
+PC-0254,2026-10-14,EMEA,Netherlands,HomeBase Station,n/a,GPS accuracy,Low,Resolved,Chat,2026-10-18,Location jumps several blocks
+PC-0255,2026-10-14,EMEA,United Kingdom,SmartCollar V2,2.0.4,App sync,High,Resolved,Chat,2026-10-18,Pet profile reset after login
+PC-0256,2026-10-14,Americas,Mexico,SmartLeash Connect,n/a,Fit & comfort,Medium,Resolved,Chat,2026-10-17,Clasp opens on its own
+PC-0257,2026-10-14,Americas,United States,HomeBase Station,n/a,App sync,Low,Resolved,Phone,2026-10-21,App stuck on syncing
+PC-0258,2026-10-14,Americas,United States,SmartCollar V2,2.0.4,Fit & comfort,Low,Open,Chat,,Strap irritating pet's neck
+PC-0259,2026-10-14,APAC,South Korea,SmartCollar V1,1.8.2,Health alerts,Medium,Resolved,App,2026-10-19,Heart-rate alert seems wrong during play
+PC-0260,2026-10-15,EMEA,Spain,SmartCollar V2,2.0.4,App sync,High,Resolved,App,2026-10-24,Activity history missing for last week
+PC-0261,2026-10-15,EMEA,United Kingdom,SmartCollar V2,2.0.4,Battery,Low,Resolved,Email,2026-10-23,Charging dock not recognized
+PC-0262,2026-10-15,EMEA,France,SmartCollar V2,2.0.4,Connectivity,Medium,Resolved,Email,2026-10-23,Bluetooth pairing fails after update
+PC-0263,2026-10-15,EMEA,Spain,SmartLeash Connect,n/a,App sync,High,Resolved,App,2026-10-16,Activity history missing for last week
+PC-0264,2026-10-15,APAC,Australia,SmartCollar V1,1.8.2,GPS accuracy,Medium,Resolved,Phone,2026-10-18,Walk route not recorded
+PC-0265,2026-10-15,APAC,Australia,HomeBase Station,n/a,Battery,Medium,Resolved,Chat,2026-10-16,Battery drains in under a day
+PC-0266,2026-10-16,EMEA,France,SmartCollar V2,2.0.3,Health alerts,Medium,In Progress,Email,,Activity score stuck at zero
+PC-0267,2026-10-16,EMEA,United Kingdom,SmartLeash Connect,n/a,GPS accuracy,Medium,Resolved,Phone,2026-10-19,Walk route not recorded
+PC-0268,2026-10-16,Americas,Mexico,SmartCollar V2,2.0.3,Connectivity,Low,Resolved,App,2026-10-24,Collar disconnects from the app every few minutes
+PC-0269,2026-10-16,Americas,Brazil,SmartCollar V1,1.8.2,App sync,Low,Resolved,Chat,2026-10-25,Activity history missing for last week
+PC-0270,2026-10-16,APAC,South Korea,SmartCollar V2,2.1.0,Connectivity,High,In Progress,Email,,Device shows offline while pet is home
+PC-0271,2026-10-17,EMEA,Spain,SmartCollar V2,2.0.4,Battery,Medium,Resolved,App,2026-10-26,Battery drains in under a day
+PC-0272,2026-10-17,Americas,Canada,HomeBase Station,n/a,Connectivity,Medium,In Progress,App,,Device shows offline while pet is home
+PC-0273,2026-10-17,Americas,Brazil,SmartCollar V2,2.0.3,Connectivity,Low,Resolved,Phone,2026-10-20,Bluetooth pairing fails after update
+PC-0274,2026-10-17,APAC,Japan,SmartCollar V2,2.1.0,Connectivity,High,In Progress,Chat,,Device shows offline while pet is home
+PC-0275,2026-10-17,APAC,South Korea,SmartCollar V2,2.1.0,Connectivity,Critical,Resolved,Phone,2026-10-23,Bluetooth pairing fails after update
+PC-0276,2026-10-17,APAC,Japan,SmartCollar V2,2.1.0,Connectivity,High,Open,App,,Collar disconnects from the app every few minutes
+PC-0277,2026-10-17,APAC,South Korea,SmartCollar V2,2.1.0,Connectivity,Critical,Open,Email,,Bluetooth pairing fails after update
+PC-0278,2026-10-17,APAC,Singapore,SmartCollar V2,2.1.0,Connectivity,Medium,Resolved,Email,2026-10-24,Bluetooth pairing fails after update
+PC-0279,2026-10-17,Americas,Mexico,SmartCollar V2,2.1.0,Connectivity,Medium,Resolved,Email,2026-10-23,Bluetooth pairing fails after update
+PC-0280,2026-10-18,Americas,Brazil,SmartCollar V1,1.8.2,Connectivity,Low,Resolved,Chat,2026-10-25,Device shows offline while pet is home
+PC-0281,2026-10-18,APAC,Singapore,SmartCollar V2,2.1.0,Connectivity,High,Open,Email,,Collar disconnects from the app every few minutes
+PC-0282,2026-10-18,APAC,Japan,SmartCollar V2,2.1.0,Connectivity,Critical,Open,Email,,Device shows offline while pet is home
+PC-0283,2026-10-18,Americas,United States,SmartCollar V2,2.1.0,Connectivity,High,Resolved,Chat,2026-10-27,Bluetooth pairing fails after update
+PC-0284,2026-10-19,EMEA,France,SmartCollar V1,1.8.2,Battery,Medium,In Progress,App,,Battery drains in under a day
+PC-0285,2026-10-19,Americas,Brazil,SmartLeash Connect,n/a,Health alerts,High,Resolved,Email,2026-10-20,Temperature alert sent repeatedly
+PC-0286,2026-10-19,APAC,Australia,SmartCollar V2,2.1.0,Connectivity,High,Open,Chat,,Bluetooth pairing fails after update
+PC-0287,2026-10-19,APAC,Singapore,SmartCollar V2,2.1.0,Connectivity,High,Open,Phone,,Device shows offline while pet is home
+PC-0288,2026-10-19,EMEA,France,SmartCollar V2,2.1.0,App sync,Medium,Resolved,Phone,2026-10-28,App stuck on syncing
+PC-0289,2026-10-20,EMEA,Germany,HomeBase Station,n/a,GPS accuracy,Medium,In Progress,Chat,,Geofence alert triggered while pet was inside
+PC-0290,2026-10-20,Americas,Brazil,SmartCollar V1,1.8.2,Health alerts,High,Resolved,Email,2026-10-22,Temperature alert sent repeatedly
+PC-0291,2026-10-20,APAC,Japan,SmartCollar V2,2.1.0,Connectivity,Critical,In Progress,App,,Bluetooth pairing fails after update
+PC-0292,2026-10-21,EMEA,Spain,SmartCollar V2,2.0.4,GPS accuracy,High,Resolved,Phone,2026-10-22,Walk route not recorded
+PC-0293,2026-10-21,EMEA,Spain,SmartCollar V2,2.0.4,Battery,Low,Resolved,Chat,2026-10-30,Collar won't hold a charge overnight
+PC-0294,2026-10-21,EMEA,France,SmartCollar V1,1.8.2,GPS accuracy,High,Resolved,Chat,2026-10-26,Walk route not recorded
+PC-0295,2026-10-21,Americas,United States,SmartCollar V2,2.0.3,Connectivity,Low,Resolved,Chat,2026-10-29,Bluetooth pairing fails after update
+PC-0296,2026-10-21,Americas,United States,SmartCollar V2,2.0.4,Health alerts,Medium,In Progress,Phone,,Temperature alert sent repeatedly
+PC-0297,2026-10-21,APAC,Singapore,SmartCollar V2,2.1.0,Connectivity,High,Open,Phone,,Device shows offline while pet is home
+PC-0298,2026-10-21,APAC,Singapore,SmartCollar V2,2.1.0,Connectivity,High,Resolved,App,2026-10-28,Device shows offline while pet is home
+PC-0299,2026-10-22,EMEA,Netherlands,SmartCollar V2,2.0.3,GPS accuracy,Low,Resolved,App,2026-10-27,Location jumps several blocks
+PC-0300,2026-10-22,EMEA,Spain,HomeBase Station,n/a,Fit & comfort,Medium,Resolved,Email,2026-10-23,Collar too heavy for small breed
+PC-0301,2026-10-22,Americas,Brazil,SmartLeash Connect,n/a,App sync,Medium,In Progress,Phone,,App stuck on syncing
+PC-0302,2026-10-22,APAC,Australia,SmartCollar V2,2.1.0,Connectivity,High,Open,Email,,Collar disconnects from the app every few minutes
+PC-0303,2026-10-22,APAC,Japan,SmartCollar V2,2.1.0,Connectivity,High,Open,App,,Collar disconnects from the app every few minutes
+PC-0304,2026-10-23,EMEA,United Kingdom,SmartCollar V2,2.0.3,App sync,Low,Open,Chat,,Activity history missing for last week
+PC-0305,2026-10-23,Americas,United States,SmartCollar V1,1.8.2,Health alerts,Low,Open,App,,Activity score stuck at zero
+PC-0306,2026-10-23,Americas,Mexico,SmartCollar V2,2.0.3,Battery,Medium,Resolved,Chat,2026-10-26,Battery drains in under a day
+PC-0307,2026-10-23,APAC,Japan,SmartCollar V2,2.0.4,Health alerts,Medium,Resolved,App,2026-10-31,Temperature alert sent repeatedly
+PC-0308,2026-10-23,APAC,Australia,SmartCollar V2,2.1.0,Connectivity,High,Open,Phone,,Bluetooth pairing fails after update
+PC-0309,2026-10-24,EMEA,Netherlands,SmartCollar V2,2.0.4,Health alerts,Medium,In Progress,Chat,,Activity score stuck at zero
+PC-0310,2026-10-24,APAC,Australia,SmartCollar V2,2.1.0,Connectivity,Critical,Resolved,App,2026-10-25,Collar disconnects from the app every few minutes
+PC-0311,2026-10-24,APAC,Japan,SmartCollar V2,2.1.0,Connectivity,Critical,Open,Phone,,Device shows offline while pet is home
+PC-0312,2026-10-25,EMEA,Netherlands,SmartCollar V1,1.8.2,Connectivity,Low,In Progress,Chat,,Bluetooth pairing fails after update
+PC-0313,2026-10-25,EMEA,Spain,HomeBase Station,n/a,Fit & comfort,Medium,Resolved,Email,2026-10-26,Clasp opens on its own
+PC-0314,2026-10-25,EMEA,Spain,SmartCollar V2,2.0.3,GPS accuracy,Medium,In Progress,Email,,Walk route not recorded
+PC-0315,2026-10-25,Americas,Canada,SmartCollar V2,2.0.3,Fit & comfort,Critical,Resolved,App,2026-10-31,Strap irritating pet's neck
+PC-0316,2026-10-25,Americas,Canada,SmartCollar V2,2.0.3,Fit & comfort,Medium,Open,Email,,Collar too heavy for small breed
+PC-0317,2026-10-25,APAC,Japan,SmartCollar V1,1.8.2,Health alerts,Low,In Progress,Phone,,Heart-rate alert seems wrong during play
+PC-0318,2026-10-25,APAC,Singapore,SmartCollar V2,2.1.0,Connectivity,High,Resolved,Email,2026-10-29,Bluetooth pairing fails after update
+PC-0319,2026-10-25,APAC,Singapore,SmartCollar V2,2.1.0,Connectivity,High,Open,Phone,,Collar disconnects from the app every few minutes
+PC-0320,2026-10-25,APAC,Japan,SmartCollar V2,2.1.0,Connectivity,Critical,Open,Email,,Bluetooth pairing fails after update
+PC-0321,2026-10-26,Americas,Brazil,HomeBase Station,n/a,GPS accuracy,High,In Progress,Phone,,Walk route not recorded
+PC-0322,2026-10-26,APAC,South Korea,SmartCollar V2,2.1.0,Connectivity,Critical,In Progress,App,,Collar disconnects from the app every few minutes
+PC-0323,2026-10-26,APAC,Japan,SmartCollar V2,2.1.0,Connectivity,High,In Progress,Email,,Device shows offline while pet is home
+PC-0324,2026-10-26,APAC,Singapore,SmartCollar V2,2.1.0,Connectivity,Medium,In Progress,Chat,,Device shows offline while pet is home
+PC-0325,2026-10-27,EMEA,France,SmartCollar V1,1.8.2,GPS accuracy,Medium,Open,Chat,,Walk route not recorded
+PC-0326,2026-10-27,EMEA,Spain,SmartCollar V1,1.8.2,Fit & comfort,Low,Open,Phone,,Collar too heavy for small breed
+PC-0327,2026-10-27,EMEA,France,SmartCollar V2,2.0.4,Connectivity,Low,In Progress,Chat,,Collar disconnects from the app every few minutes
+PC-0328,2026-10-27,EMEA,Netherlands,SmartCollar V1,1.8.2,Health alerts,Medium,Open,App,,Heart-rate alert seems wrong during play
+PC-0329,2026-10-27,Americas,Canada,SmartCollar V2,2.0.4,App sync,High,Open,Chat,,Activity history missing for last week
+PC-0330,2026-10-27,APAC,South Korea,SmartCollar V2,2.1.0,Connectivity,High,Open,App,,Device shows offline while pet is home
+PC-0331,2026-10-27,APAC,Singapore,SmartCollar V2,2.1.0,Connectivity,Critical,In Progress,Phone,,Device shows offline while pet is home
+PC-0332,2026-10-27,APAC,Japan,SmartCollar V2,2.1.0,Connectivity,High,In Progress,Email,,Bluetooth pairing fails after update
+PC-0333,2026-10-28,EMEA,Netherlands,SmartLeash Connect,n/a,Health alerts,Medium,In Progress,Phone,,Activity score stuck at zero
+PC-0334,2026-10-28,Americas,Canada,HomeBase Station,n/a,App sync,Medium,In Progress,Chat,,Pet profile reset after login
+PC-0335,2026-10-28,Americas,United States,HomeBase Station,n/a,GPS accuracy,Low,In Progress,Chat,,Walk route not recorded
+PC-0336,2026-10-28,APAC,South Korea,SmartCollar V2,2.0.4,Fit & comfort,Critical,Open,Chat,,Strap irritating pet's neck
+PC-0337,2026-10-28,APAC,South Korea,SmartCollar V2,2.1.0,Connectivity,Medium,Open,App,,Device shows offline while pet is home
+PC-0338,2026-10-28,APAC,Singapore,SmartCollar V2,2.1.0,Connectivity,High,In Progress,App,,Bluetooth pairing fails after update
+PC-0339,2026-10-28,Americas,Canada,SmartCollar V2,2.1.0,Connectivity,High,Open,Phone,,Collar disconnects from the app every few minutes
+PC-0340,2026-10-29,Americas,Mexico,SmartCollar V1,1.8.2,Connectivity,Medium,In Progress,App,,Bluetooth pairing fails after update
+PC-0341,2026-10-29,Americas,Brazil,HomeBase Station,n/a,Fit & comfort,Low,Open,Chat,,Strap irritating pet's neck
+PC-0342,2026-10-29,APAC,Australia,SmartCollar V2,2.0.4,App sync,High,Open,Email,,Activity history missing for last week
+PC-0343,2026-10-29,APAC,South Korea,SmartCollar V2,2.1.0,Connectivity,High,Open,Email,,Device shows offline while pet is home
+PC-0344,2026-10-29,APAC,South Korea,SmartCollar V2,2.1.0,Connectivity,High,In Progress,Email,,Device shows offline while pet is home
+PC-0345,2026-10-29,APAC,Japan,SmartCollar V2,2.1.0,Connectivity,Critical,Open,Chat,,Device shows offline while pet is home
+PC-0346,2026-10-29,Americas,Mexico,SmartCollar V2,2.1.0,App sync,Medium,Open,App,,Pet profile reset after login
+PC-0347,2026-10-30,EMEA,Germany,SmartCollar V2,2.0.3,Fit & comfort,Medium,Open,Phone,,Clasp opens on its own
+PC-0348,2026-10-30,EMEA,Germany,SmartCollar V1,1.8.2,Battery,Medium,In Progress,Email,,Collar won't hold a charge overnight
+PC-0349,2026-10-30,EMEA,Spain,SmartCollar V2,2.0.4,Connectivity,Low,Open,App,,Device shows offline while pet is home
+PC-0350,2026-10-30,Americas,Canada,HomeBase Station,n/a,Battery,Low,In Progress,Chat,,Collar won't hold a charge overnight
+PC-0351,2026-10-30,APAC,South Korea,SmartCollar V2,2.1.0,Connectivity,Medium,In Progress,Email,,Collar disconnects from the app every few minutes
+PC-0352,2026-10-31,EMEA,Germany,SmartCollar V2,2.0.3,Fit & comfort,High,Open,Email,,Clasp opens on its own
+PC-0353,2026-10-31,APAC,South Korea,HomeBase Station,n/a,Battery,Medium,In Progress,Phone,,Charging dock not recognized
+PC-0354,2026-10-31,APAC,Australia,SmartCollar V2,2.1.0,Connectivity,Critical,Open,Chat,,Device shows offline while pet is home
+PC-0355,2026-10-31,APAC,Singapore,SmartCollar V2,2.1.0,Connectivity,High,In Progress,App,,Device shows offline while pet is home
+PC-0356,2026-10-31,APAC,South Korea,SmartCollar V2,2.1.0,Connectivity,High,Open,Email,,Collar disconnects from the app every few minutes
