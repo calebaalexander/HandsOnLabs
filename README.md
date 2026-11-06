@@ -42,6 +42,8 @@ Materials for **I Downloaded CoCo Desktop... Now What?** (Nov 10, 2026), a first
 
 ```
 3-CoCo-Desktop/
+├── data/
+│   └── support_tickets.csv        # Fictional support tickets for the lab
 └── slides/
     └── index.html                 # Opening slides (open in a browser)
 ```

@@ -8,8 +8,10 @@ Part 1 of the CoCo Desktop series, first presented **November 10, 2026**. This l
 
 ```
 3-CoCo-Desktop/
+├── data/
+│   └── support_tickets.csv   # 240 fictional PawCore support tickets used in the lab
 └── slides/
-    └── index.html   # Opening slides (open in a browser; arrow keys to navigate)
+    └── index.html            # Opening slides (open in a browser; arrow keys to navigate)
 ```
 
 ## Get CoCo Desktop
@@ -24,6 +26,10 @@ Download it from the [official Snowflake CoCo downloads page](https://www.snowfl
 - On a self-service trial, an account admin must add a credit card to enable AI features
 
 This repo provides materials only. It does not grant access to any Snowflake account or data. Review setup scripts in this repo before running them, especially in a shared account.
+
+## Get the data
+
+Download [`data/support_tickets.csv`](data/support_tickets.csv): open the file on GitHub and click the download button, or use **Code > Download ZIP** on the repo home page to get everything. In the lab, CoCo Desktop loads this file into `PAWCORE_ANALYTICS.SUPPORT.SUPPORT_TICKETS` in your own Snowflake account.
 
 ## The PawCore question
 
