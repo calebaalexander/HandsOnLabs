@@ -48,7 +48,7 @@ Raw Data (7 tables)
 | **Snowflake Notebooks** | Interactive notebooks that run directly in Snowflake — no external kernel needed. |
 | **Dynamic Tables** | Declarative tables that auto-refresh when source data changes. Define the query once; Snowflake handles the pipeline. |
 | **Streamlit in Snowflake** | Build and deploy interactive web apps inside Snowflake with no external infrastructure. |
-| **Snowflake Intelligence** | Conversational AI interface built on Cortex Agents for ad-hoc data exploration. |
+| **Snowflake CoWork** | Conversational AI interface built on Cortex Agents for ad-hoc data exploration. |
 
 ---
 
@@ -67,4 +67,4 @@ All exercise SQL files and the starter notebook are in the [`exercises/`](./exer
 - [Cortex Code Documentation](https://docs.snowflake.com/en/user-guide/ui-snowsight-cortex-code)
 - [Dynamic Tables Documentation](https://docs.snowflake.com/en/user-guide/dynamic-tables-about)
 - [Streamlit in Snowflake Documentation](https://docs.snowflake.com/en/developer-guide/streamlit/about-streamlit)
-- [Snowflake Intelligence Documentation](https://docs.snowflake.com/user-guide/snowflake-cortex/snowflake-intelligence)
+- [Snowflake CoWork Documentation](https://docs.snowflake.com/user-guide/snowflake-cortex/snowflake-intelligence)

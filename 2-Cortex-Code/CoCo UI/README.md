@@ -6,7 +6,7 @@
 
 ## Tab 1: Why Are We Here?
 
-To learn about **Cortex Code in Snowsight**, the AI coding assistant built directly into Snowflake's web interface. In this lab, you'll use the Cortex Code side panel to load data, diagnose errors from screenshots, build a Snowflake Notebook, create a Dynamic Table pipeline, deploy a Streamlit application, and launch a Snowflake Intelligence agent — all without leaving your browser.
+To learn about **Cortex Code in Snowsight**, the AI coding assistant built directly into Snowflake's web interface. In this lab, you'll use the Cortex Code side panel to load data, diagnose errors from screenshots, build a Snowflake Notebook, create a Dynamic Table pipeline, deploy a Streamlit application, and launch a Snowflake CoWork agent — all without leaving your browser.
 
 > **Prerequisites:** This lab assumes Cortex Code is already enabled and running in your Snowflake environment. If the CoCo panel does not appear in Snowsight, refer to the **Setup & Install video** linked in the video description before proceeding.
 
@@ -27,7 +27,7 @@ To learn about **Cortex Code in Snowsight**, the AI coding assistant built direc
 | **Snowflake Notebooks** | Interactive notebooks that run directly in Snowflake. CoCo can create, edit, and debug notebook cells. |
 | **Dynamic Tables** | Declarative tables that auto-refresh when source data changes. Define the query once, Snowflake handles the pipeline. |
 | **Streamlit in Snowflake** | Build and deploy interactive web applications directly inside Snowflake with no external infrastructure. |
-| **Snowflake Intelligence** | A conversational AI chat interface built on Cortex Agents. Lets users explore data through conversation. |
+| **Snowflake CoWork** | A conversational AI chat interface built on Cortex Agents. Lets users explore data through conversation. |
 
 ### Use Case: Support Ops Readiness
 
@@ -448,7 +448,7 @@ filtered by the region selected in a sidebar dropdown.
 
 ## Tab 7: Exercise 5 — Semantic View & Intelligence Agent
 
-**Objective:** Create a Semantic View and Cortex Agent so Marcus can ask ad-hoc questions about support operations in natural language through Snowflake Intelligence.
+**Objective:** Create a Semantic View and Cortex Agent so Marcus can ask ad-hoc questions about support operations in natural language through Snowflake CoWork.
 
 **Time: ~4 minutes**
 
@@ -493,7 +493,7 @@ points and regional breakdowns. Grant USAGE on the agent to PUBLIC.
 Continue autonomously.
 ```
 
-Then navigate to **AI & ML → Agents → Snowflake Intelligence tab**. Click **"Add existing agent"**, search for `PAWCORE_SUPPORT_OPS_AGENT`, select it, and confirm. Then switch to **Snowflake Intelligence** and test:
+Then navigate to **AI & ML → Agents → Snowflake CoWork tab**. Click **"Add existing agent"**, search for `PAWCORE_SUPPORT_OPS_AGENT`, select it, and confirm. Then switch to **Snowflake CoWork** and test:
 
 ```
 Which region has the highest support ticket load and what's driving it?
@@ -503,7 +503,7 @@ Which region has the highest support ticket load and what's driving it?
 Is there a correlation between low battery events and critical support tickets?
 ```
 
-> **Key Feature:** The full pipeline is now connected: raw data → Dynamic Table → Streamlit dashboard → Intelligence agent. Marcus can check the dashboard for a quick pulse, or dive into Snowflake Intelligence for deeper investigation.
+> **Key Feature:** The full pipeline is now connected: raw data → Dynamic Table → Streamlit dashboard → Intelligence agent. Marcus can check the dashboard for a quick pulse, or dive into Snowflake CoWork for deeper investigation.
 
 ---
 
@@ -511,7 +511,7 @@ Is there a correlation between low battery events and critical support tickets?
 
 - [ ] Semantic View created with support ops metrics
 - [ ] Cortex Agent created and granted to PUBLIC
-- [ ] Agent visible in Snowflake Intelligence
+- [ ] Agent visible in Snowflake CoWork
 - [ ] Intelligence answers support operations questions accurately
 
 ---
@@ -528,7 +528,7 @@ You've completed the **Intro to Cortex Code UI** Hands-On Lab.
 | **Snowflake Notebook** | Interactive support ops analysis with AI sentiment scoring |
 | **Dynamic Table** | Auto-refreshing pipeline aggregating regional support metrics |
 | **Streamlit Dashboard** | Live Support Ops Dashboard deployed in Snowflake |
-| **Semantic View + Agent** | Self-service natural language support analytics via Snowflake Intelligence |
+| **Semantic View + Agent** | Self-service natural language support analytics via Snowflake CoWork |
 
 ### The Pipeline Story
 

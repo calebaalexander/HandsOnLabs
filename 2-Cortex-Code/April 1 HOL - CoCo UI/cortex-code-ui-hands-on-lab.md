@@ -2,7 +2,7 @@
 
 > **PawCore is a fictional company.** All data, names, metrics, and scenarios are simulated for demonstration purposes only.
 
-In this quickstart you will use **Cortex Code**, the AI coding assistant built into Snowflake's web interface, to go from raw data to a fully operational analytics pipeline - without writing a single line of code manually. You will fix broken queries, build a Snowflake Notebook, create a Dynamic Table pipeline, deploy a Streamlit application, and launch a Snowflake Intelligence agent, all through natural language.
+In this quickstart you will use **Cortex Code**, the AI coding assistant built into Snowflake's web interface, to go from raw data to a fully operational analytics pipeline - without writing a single line of code manually. You will fix broken queries, build a Snowflake Notebook, create a Dynamic Table pipeline, deploy a Streamlit application, and launch a Snowflake CoWork agent, all through natural language.
 
 **The scenario:** PawCore, a pet health technology company, is preparing to launch SmartCollar V2. The CX team needs to know whether support operations are ready for the volume V2 will bring. You will build the analytics infrastructure to answer that question.
 
@@ -301,7 +301,7 @@ filtered by the region selected in a sidebar dropdown.
 
 ## Step 6: Build a Semantic View and Intelligence Agent
 
-The final step: give the CX team self-service analytics through Snowflake Intelligence - ad-hoc questions in natural language, no SQL required.
+The final step: give the CX team self-service analytics through Snowflake CoWork - ad-hoc questions in natural language, no SQL required.
 
 ### Create the Semantic View
 
@@ -332,11 +332,11 @@ Exclude data_type from dimensions.
 Create a Cortex Agent called PAWCORE_SUPPORT_OPS_AGENT in PAWCORE_ANALYTICS.SEMANTIC. Attach the PAWCORE_ANALYTICS.SEMANTIC.SUPPORT_OPS semantic view as a Cortex Analyst tool. Use these response instructions: respond concisely with bullet points, always include a regional breakdown when relevant, and highlight EMEA specifically when ticket volume or sentiment is a concern. Grant USAGE on the agent to the PUBLIC role.
 ```
 
-### Test in Snowflake Intelligence
+### Test in Snowflake CoWork
 
-1. Navigate to **AI & ML -> Agents -> Snowflake Intelligence tab**
+1. Navigate to **AI & ML -> Agents -> Snowflake CoWork tab**
 2. Click **"Add existing agent"**, search for `PAWCORE_SUPPORT_OPS_AGENT`, and confirm
-3. Switch to **Snowflake Intelligence** and test:
+3. Switch to **Snowflake CoWork** and test:
 
 ```
 Which region has the highest support ticket load and what's driving it?
@@ -360,7 +360,7 @@ Congratulations! You have built a complete analytics pipeline using Cortex Code 
 - How to create multi-cell Snowflake Notebooks from a single prompt
 - How to build auto-refreshing Dynamic Table pipelines
 - How to deploy Streamlit applications directly inside Snowflake
-- How to create Semantic Views and Cortex Agents for self-service analytics via Snowflake Intelligence
+- How to create Semantic Views and Cortex Agents for self-service analytics via Snowflake CoWork
 
 ### What You Built
 
@@ -370,7 +370,7 @@ Congratulations! You have built a complete analytics pipeline using Cortex Code 
 | **Snowflake Notebook** | Interactive support ops analysis with AI sentiment scoring |
 | **Dynamic Table** | Auto-refreshing pipeline aggregating regional support metrics |
 | **Streamlit Dashboard** | Live Support Ops Dashboard deployed in Snowflake |
-| **Semantic View + Agent** | Self-service natural language support analytics via Snowflake Intelligence |
+| **Semantic View + Agent** | Self-service natural language support analytics via Snowflake CoWork |
 
 ### Cleanup
 
@@ -398,4 +398,4 @@ DROP API INTEGRATION IF EXISTS github_api;
 - [Cortex Code Documentation](https://docs.snowflake.com/en/user-guide/ui-snowsight-cortex-code)
 - [Dynamic Tables Documentation](https://docs.snowflake.com/en/user-guide/dynamic-tables-about)
 - [Streamlit in Snowflake Documentation](https://docs.snowflake.com/en/developer-guide/streamlit/about-streamlit)
-- [Snowflake Intelligence Documentation](https://docs.snowflake.com/user-guide/snowflake-cortex/snowflake-intelligence)
+- [Snowflake CoWork Documentation](https://docs.snowflake.com/user-guide/snowflake-cortex/snowflake-intelligence)

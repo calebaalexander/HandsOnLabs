@@ -18,7 +18,7 @@ This lab follows a **Tell-Show-Tell** format across three acts:
 
 ### Exercises
 1. **Getting Started** — Install, authenticate, and load data
-2. **Exercise 1: Build the PawCore Analytics Environment** — Create a Semantic View, deploy a Cortex Agent, enable Snowflake Intelligence
+2. **Exercise 1: Build the PawCore Analytics Environment** — Create a Semantic View, deploy a Cortex Agent, enable Snowflake CoWork
 3. **Exercise 2: Master Cortex Code Skills** — Explore built-in skills and create a custom one
 4. **Exercise 3: Generate Launch Documentation** — Produce stakeholder-ready reports and diagrams
 
@@ -32,7 +32,7 @@ PawCore is a fictional pet health and fitness tracker company. Their flagship pr
 |---------|------------|
 | **Cortex Analyst** | AI-powered natural language to SQL. Users ask questions in plain English, Cortex Analyst generates and runs SQL. |
 | **Semantic Views** | A SQL-based data model layer that describes your tables, relationships, metrics, and business definitions to Cortex Analyst. |
-| **Snowflake Intelligence** | A conversational AI chat interface built on Cortex Agents. Lets users explore data through conversation. |
+| **Snowflake CoWork** | A conversational AI chat interface built on Cortex Agents. Lets users explore data through conversation. |
 | **Skills** | Reusable workflows packaged as markdown files that teach Cortex Code how to complete specific tasks consistently. |
 | **Cortex Agents** | Combine structured data queries (via Semantic Views) and unstructured document search (via Cortex Search) in one conversational interface. |
 | **Cortex Search** | AI-powered search across unstructured documents (PDFs, text files) stored in Snowflake. |
@@ -177,14 +177,14 @@ Show me row counts for all tables in PAWCORE_ANALYTICS.
 
 ## Tab 3: Exercise 1 — Build the PawCore Analytics Environment
 
-**Objective:** Set up the PawCore intelligence layer — Semantic View, Cortex Analyst, and Snowflake Intelligence — to support V2 launch readiness analysis.
+**Objective:** Set up the PawCore intelligence layer — Semantic View, Cortex Analyst, and Snowflake CoWork — to support V2 launch readiness analysis.
 
 **Time: ~25 minutes**
 
 **Deliverables:**
 - Working Semantic View for Cortex Analyst
 - Tested natural language queries
-- Cortex Agent enabled in Snowflake Intelligence
+- Cortex Agent enabled in Snowflake CoWork
 
 ---
 
@@ -266,7 +266,7 @@ For each question, show me:
 
 ---
 
-### Task 3: Create a Cortex Agent & Enable Snowflake Intelligence (10 min)
+### Task 3: Create a Cortex Agent & Enable Snowflake CoWork (10 min)
 
 #### Step 1: Create the Cortex Agent
 
@@ -302,7 +302,7 @@ Before proceeding, verify:
 - [ ] Cortex Analyst responds correctly to natural language queries
 - [ ] Generated SQL is correct and references the right tables
 - [ ] Cortex Agent created and responding
-- [ ] Agent enabled in Snowflake Intelligence (USAGE granted)
+- [ ] Agent enabled in Snowflake CoWork (USAGE granted)
 - [ ] Agent answers V2 launch readiness questions meaningfully
 
 ---
@@ -492,7 +492,7 @@ Include:
    Internal comms, QC documents
 2. Snowflake Platform — Schemas (DEVICE_DATA, MANUFACTURING, SUPPORT,
    UNSTRUCTURED, SEMANTIC), Cortex Search, Semantic View
-3. Intelligence Layer — Cortex Analyst, Cortex Agent, Snowflake Intelligence
+3. Intelligence Layer — Cortex Analyst, Cortex Agent, Snowflake CoWork
 4. Consumers — Rina (VP Product), Derek (CFO), Board, Analytics Team
 
 Save the diagram to a file called pawcore_architecture.md

@@ -71,7 +71,7 @@ The team confirmed the following data is already in Snowflake (PAWCORE_ANALYTICS
 ## Agreed Next Steps
 1. **Build analytics POC** using Cortex Code CLI
 2. **Create a Semantic View** so Cortex Analyst can answer questions in plain English
-3. **Set up Snowflake Intelligence** for self-service access
+3. **Set up Snowflake CoWork** for self-service access
 4. **Generate a board presentation** with key metrics and recommendation
 5. **Demo to Rina** by end of week — she'll present to the board the following Monday
 

@@ -8,8 +8,8 @@ Demo materials for PawCore — a fictional IoT pet technology company building s
 
 ## Repository Structure
 
-### 1-Cortex-AI-Snowflake-Intelligence/
-Materials from the **Cortex AI and Snowflake Intelligence** webinar (LOT341 humidity investigation story).
+### 1-Cortex-AI-Snowflake-CoWork/
+Materials from the **Cortex AI and Snowflake CoWork** webinar (LOT341 humidity investigation story).
 
 - `pawcore_setup.sql` — Original environment setup
 - `DQC_AISQL_PAWCORE.ipynb` — Data quality notebook

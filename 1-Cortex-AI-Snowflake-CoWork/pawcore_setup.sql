@@ -35,7 +35,7 @@ USE SCHEMA SEMANTIC;
 GRANT CREATE AGENT ON SCHEMA PAWCORE_ANALYTICS.SEMANTIC TO ROLE ACCOUNTADMIN;
 
 -- ========================================================================
--- SNOWFLAKE INTELLIGENCE DATABASE SETUP
+-- SNOWFLAKE COWORK DATABASE SETUP
 -- ========================================================================
 
 USE DATABASE PAWCORE_ANALYTICS;
@@ -1567,10 +1567,10 @@ GRANT USAGE ON SCHEMA PAWCORE_ANALYTICS.SEMANTIC TO ROLE PAWCORE_ANALYST;
 GRANT SELECT, REFERENCES ON ALL SEMANTIC VIEWS IN SCHEMA PAWCORE_ANALYTICS.SEMANTIC TO ROLE PAWCORE_SEARCH;
 
 -- ========================================================================
--- SNOWFLAKE INTELLIGENCE SETUP (COMMENTED OUT - OPTIONAL)
+-- SNOWFLAKE COWORK SETUP (COMMENTED OUT - OPTIONAL)
 -- ========================================================================
 /*
--- NOTE: Snowflake Intelligence setup is commented out to avoid privilege issues
+-- NOTE: Snowflake CoWork setup is commented out to avoid privilege issues
 -- Only uncomment if you specifically need to create AI agents
 
 -- CREATE DATABASE IF NOT EXISTS snowflake_intelligence;

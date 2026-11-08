@@ -40,11 +40,11 @@
 -- -----------------------------------------------------------------------
 
 
--- STEP 3: TEST IN SNOWFLAKE INTELLIGENCE
--- 1. Navigate to AI & ML > Agents > Snowflake Intelligence tab
+-- STEP 3: TEST IN SNOWFLAKE COWORK
+-- 1. Navigate to AI & ML > Agents > Snowflake CoWork tab
 -- 2. Click "Add existing agent"
 -- 3. Search for PAWCORE_SUPPORT_OPS_AGENT, select it, confirm
--- 4. Switch to Snowflake Intelligence and try these questions:
+-- 4. Switch to Snowflake CoWork and try these questions:
 
 -- "Which region has the highest support ticket load and what's driving it?"
 -- "Is there a correlation between low battery events and critical support tickets?"
