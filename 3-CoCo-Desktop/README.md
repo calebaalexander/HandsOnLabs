@@ -8,6 +8,7 @@ Part 1 of the CoCo Desktop series, first presented **November 10, 2026**. This l
 
 ```
 3-CoCo-Desktop/
+├── 3-CoCo-Desktop.zip            # This whole folder as one download
 ├── data/
 │   ├── support_tickets.csv           # 356 fictional PawCore support tickets (Aug-Oct 2026)
 │   └── generate_support_tickets.py   # Script that generated the data
@@ -23,14 +24,23 @@ Download it from the [official Snowflake CoCo downloads page](https://www.snowfl
 
 - CoCo Desktop and your own Snowflake account and sign-in
 - An active role with `SNOWFLAKE.CORTEX_USER` or `SNOWFLAKE.CORTEX_AGENT_USER`, and an available AI model
-- A warehouse and read access to the PawCore support tickets table (`PAWCORE_ANALYTICS.SUPPORT.SUPPORT_TICKETS`)
+- A warehouse, and a role that can create the `PAWCORE_ANALYTICS` database and `SUPPORT` schema (or an account admin who creates them for you)
 - On a self-service trial, an account admin must add a credit card to enable AI features
 
 This repo provides materials only. It does not grant access to any Snowflake account or data. Review setup scripts in this repo before running them, especially in a shared account.
 
 ## Get the data
 
-Download [`data/support_tickets.csv`](data/support_tickets.csv): open the file on GitHub and click the download button, or use **Code > Download ZIP** on the repo home page to get everything. In the lab, CoCo Desktop loads this file into `PAWCORE_ANALYTICS.SUPPORT.SUPPORT_TICKETS` in your own Snowflake account.
+Download [`3-CoCo-Desktop.zip`](3-CoCo-Desktop.zip) from this folder and unzip it. You get a `3-CoCo-Desktop` folder with the data and slides. In the lab, CoCo Desktop loads `data/support_tickets.csv` into `PAWCORE_ANALYTICS.SUPPORT.SUPPORT_TICKETS` in your own Snowflake account.
+
+## Start your first session
+
+1. In CoCo Desktop, click the add-project icon next to **Projects**, choose **Open Folder**, and select the unzipped `3-CoCo-Desktop` folder. This is your PawCore project.
+2. Start a **New session** in that project and send this prompt. It tells CoCo the goal and where the data should go, and only reads the file:
+
+> This session has one goal: load `data/support_tickets.csv` from this project into Snowflake as the table `PAWCORE_ANALYTICS.SUPPORT.SUPPORT_TICKETS`, in database `PAWCORE_ANALYTICS` and schema `SUPPORT`. Don't create or load anything yet. First, read the file and tell me how many rows and columns it has, the column names, and anything I should know before loading it, such as empty values or date formats.
+
+CoCo should report 356 rows and 12 columns, with some empty `resolved_date` values (tickets not yet resolved).
 
 ### Columns
 
