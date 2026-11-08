@@ -14,6 +14,8 @@ Part 1 of the CoCo Desktop series, first presented **November 10, 2026**. This l
 ├── data/
 │   ├── support_tickets.csv           # 356 fictional PawCore support tickets (Aug-Oct 2026)
 │   └── generate_support_tickets.py   # Script that generated the data
+├── plugins/
+│   └── xo/                   # XO plugin by Dan Chaffelson (Apache 2.0), ready to install
 └── slides/
     └── index.html            # Opening slides (open in a browser; arrow keys to navigate)
 ```
@@ -85,15 +87,16 @@ Building your own agent? Put the same guidance in its **System Prompt** (**Custo
 
 [XO](https://github.com/Snowflake-Labs/coco-skills/tree/main/plugins/xo) is an open-source CoCo plugin built by Dan Chaffelson and published on Snowflake Labs (Apache 2.0). It keeps plain-text notes of your sessions in a vault you own, so work picks up where you left off, saves rules when you correct it, and works in steps (survey, plan, build, prove) sized to the job.
 
+A copy is included in this folder at [`plugins/xo/`](plugins/xo/), so you don't need to download anything else.
+
 1. Make sure `node`, `git`, `gh`, and `jq` are on your PATH.
-2. In CoCo Desktop, open **Customize > Plugins** and add the plugin from GitHub: `Snowflake-Labs/coco-skills`, plugin `xo`.
-3. Run the bundled setup once in a terminal:
+2. Move the unzipped `3-CoCo-Desktop` folder to wherever you'll keep it. XO is registered from this location, so don't move or delete the folder afterwards.
+3. In a terminal, from the `3-CoCo-Desktop` folder, run the setup once:
 
    ```bash
-   ~/.snowflake/cortex/plugins/xo/setup.sh install
+   bash plugins/xo/setup.sh install
    ```
 
-   For a private, git-backed vault on your GitHub account instead, clone the repo and run `coco-skills/plugins/xo/setup.sh init` (requires `gh auth login`).
-4. Check it with `setup.sh status`.
+4. Start a new session in CoCo Desktop and check that XO appears under **Customize > Plugins**. To check its health at any time, run `bash plugins/xo/setup.sh status`.
 
-See XO's [SETUP.md](https://github.com/Snowflake-Labs/coco-skills/blob/main/plugins/xo/SETUP.md) for details. Review a plugin's hooks and scripts before you install it.
+For a private, git-backed vault on your GitHub account, run `bash plugins/xo/setup.sh init` instead (requires `gh auth login`). The copy here is pinned to the version noted in [`plugins/README.md`](plugins/README.md); for updates, install from [Snowflake-Labs/coco-skills](https://github.com/Snowflake-Labs/coco-skills/tree/main/plugins/xo). See XO's [SETUP.md](plugins/xo/SETUP.md) for details. Review a plugin's hooks and scripts before you install it.
