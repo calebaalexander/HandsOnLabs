@@ -9,6 +9,8 @@ Part 1 of the CoCo Desktop series, first presented **November 10, 2026**. This l
 ```
 3-CoCo-Desktop/
 ├── 3-CoCo-Desktop.zip            # This whole folder as one download
+├── .snowflake/cortex/skills/
+│   └── human-voice/SKILL.md      # Skill that rewrites output in a plain, human voice
 ├── data/
 │   ├── support_tickets.csv           # 356 fictional PawCore support tickets (Aug-Oct 2026)
 │   └── generate_support_tickets.py   # Script that generated the data
@@ -51,6 +53,33 @@ CoCo should report 356 rows and 12 columns, with some empty `resolved_date` valu
 A SmartCollar V2 support lead asks: which region needs attention, and what evidence supports that call? The lab shows how to give CoCo focused context, review the action it proposes, and check the answer against the data.
 
 A tested Desktop take-home exercise will be added here.
+
+## Make CoCo sound more human
+
+There are two ways to do this, and you can use both.
+
+**1. Custom instructions (every conversation).** In CoCo Desktop, open **Customize > Personalization > Custom instructions**, paste this, and click **Save**. It's saved to `~/.snowflake/cortex/AGENTS.md` and applies in every project, starting with your next new session.
+
+```markdown
+## How to write responses
+- Write like a colleague talking, not a report. Plain words, short sentences, contractions.
+- Lead with the answer in one or two sentences, then the evidence.
+- Use bullets only for three or more parallel items. No headers in short answers.
+- Don't open with "Great question" or "Certainly." Don't close with "I hope this helps."
+- Don't use em dashes or filler words: delve, leverage, robust, seamless, crucial, comprehensive.
+- Say what you checked and what you're guessing. If you don't know, say so.
+- End with one clear next step or one question, not a menu of options.
+```
+
+To use it for one project only, put the same text in an `AGENTS.md` at the project root instead.
+
+**2. The `human-voice` skill (on demand).** This folder includes a skill at [`.snowflake/cortex/skills/human-voice/SKILL.md`](.snowflake/cortex/skills/human-voice/SKILL.md). When you open `3-CoCo-Desktop` as a project, CoCo finds it automatically; check **Customize > Skills > Local Skills**. (Folders that start with a dot are hidden in Finder by default; press Cmd+Shift+. to show them.) Run it after any answer:
+
+> /human-voice Rewrite your answer as a Slack message to the SmartCollar V2 support lead. Keep every number.
+
+It keeps the facts, leads with the point, cuts filler, fits the length to the channel, and ends with a "Changed:" line so you can check what it dropped. Read the output before you send it.
+
+Building your own agent? Put the same guidance in its **System Prompt** (**Customize > Agents > + New**). For a Cortex Agent in Snowflake, put it in the agent's response instructions.
 
 ## Optional: the XO plugin
 
