@@ -51,3 +51,20 @@ CoCo should report 356 rows and 12 columns, with some empty `resolved_date` valu
 A SmartCollar V2 support lead asks: which region needs attention, and what evidence supports that call? The lab shows how to give CoCo focused context, review the action it proposes, and check the answer against the data.
 
 A tested Desktop take-home exercise will be added here.
+
+## Optional: the XO plugin
+
+[XO](https://github.com/Snowflake-Labs/coco-skills/tree/main/plugins/xo) is an open-source CoCo plugin built by Dan Chaffelson and published on Snowflake Labs (Apache 2.0). It keeps plain-text notes of your sessions in a vault you own, so work picks up where you left off, saves rules when you correct it, and works in steps (survey, plan, build, prove) sized to the job.
+
+1. Make sure `node`, `git`, `gh`, and `jq` are on your PATH.
+2. In CoCo Desktop, open **Customize > Plugins** and add the plugin from GitHub: `Snowflake-Labs/coco-skills`, plugin `xo`.
+3. Run the bundled setup once in a terminal:
+
+   ```bash
+   ~/.snowflake/cortex/plugins/xo/setup.sh install
+   ```
+
+   For a private, git-backed vault on your GitHub account instead, clone the repo and run `coco-skills/plugins/xo/setup.sh init` (requires `gh auth login`).
+4. Check it with `setup.sh status`.
+
+See XO's [SETUP.md](https://github.com/Snowflake-Labs/coco-skills/blob/main/plugins/xo/SETUP.md) for details. Review a plugin's hooks and scripts before you install it.
