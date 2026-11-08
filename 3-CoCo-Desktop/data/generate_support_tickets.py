@@ -69,7 +69,7 @@ for region in ["EMEA", "Americas"]:
 
 rows.sort(key=lambda r: r["created_date"])
 with open("support_tickets.csv", "w", newline="") as f:
-    w = csv.writer(f)
+    w = csv.writer(f, lineterminator="\n")
     w.writerow(["ticket_id", "created_date", "region", "country", "product", "firmware_version",
                 "category", "priority", "status", "channel", "resolved_date", "description"])
     for i, r in enumerate(rows, 1):
