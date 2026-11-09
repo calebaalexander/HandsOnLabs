@@ -6,9 +6,12 @@ Part 1 of the CoCo Desktop series, first presented **November 10, 2026**. This l
 
 ## What's here
 
+**Start with the [one-page guide](ONE-PAGER.md)**: everything from the lab on one page.
+
 ```
 3-CoCo-Desktop/
 ├── 3-CoCo-Desktop.zip            # This whole folder as one download
+├── ONE-PAGER.md                  # One-page guide to everything in the lab
 ├── .snowflake/cortex/skills/
 │   └── human-voice/SKILL.md      # Skill that rewrites output in a plain, human voice
 ├── data/
