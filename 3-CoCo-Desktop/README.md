@@ -118,3 +118,7 @@ A copy is included in this folder at [`plugins/xo/`](plugins/xo/), so you don't 
 4. Start a new session in CoCo Desktop and check that XO appears under **Customize > Plugins**. To check its health at any time, run `bash plugins/xo/setup.sh status`.
 
 For a private, git-backed vault on your GitHub account, run `bash plugins/xo/setup.sh init` instead (requires `gh auth login`). The copy here is pinned to the version noted in [`plugins/README.md`](plugins/README.md); for updates, install from [Snowflake-Labs/coco-skills](https://github.com/Snowflake-Labs/coco-skills/tree/main/plugins/xo). See XO's [SETUP.md](plugins/xo/SETUP.md) for details. Review a plugin's hooks and scripts before you install it.
+
+## Questions
+
+Reach out to your Snowflake account rep, or contact Caleb Alexander at [caleb.alexander@snowflake.com](mailto:caleb.alexander@snowflake.com).
