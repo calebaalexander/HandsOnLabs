@@ -44,7 +44,25 @@ Download [`3-CoCo-Desktop.zip`](3-CoCo-Desktop.zip) from this folder and unzip i
 
 > This session has one goal: load `data/support_tickets.csv` from this project into Snowflake as the table `PAWCORE_ANALYTICS.SUPPORT.SUPPORT_TICKETS`, in database `PAWCORE_ANALYTICS` and schema `SUPPORT`. Don't create or load anything yet. First, read the file and tell me how many rows and columns it has, the column names, and anything I should know before loading it, such as empty values or date formats.
 
-CoCo should report 356 rows and 12 columns, with some empty `resolved_date` values (tickets not yet resolved).
+CoCo should report 356 rows and 12 columns, with 129 empty `resolved_date` values (tickets not yet resolved) and 100 rows where `firmware_version` is the text `n/a` (HomeBase Station and SmartLeash Connect have no firmware).
+
+## Load the data into Snowflake
+
+In the **same session**, send this prompt. CoCo shows each SQL statement and waits for your approval before it runs it; read each one before you approve.
+
+> Using my current Snowflake connection, role, and warehouse, load the file `data/support_tickets.csv` from this project into a new Snowflake table, `PAWCORE_ANALYTICS.SUPPORT.SUPPORT_TICKETS`. Work through these steps in order:
+>
+> 1. Show me the current role, warehouse, database, and schema. If no warehouse is active, stop and ask me which one to use.
+> 2. Create the database `PAWCORE_ANALYTICS` and the schema `SUPPORT` if they don't exist. If my role can't create them, stop and tell me which privilege is missing.
+> 3. Create an internal stage, `PAWCORE_ANALYTICS.SUPPORT.PAWCORE_STAGE`, and upload the file to it with `PUT`.
+> 4. Create a CSV file format, `PAWCORE_ANALYTICS.SUPPORT.PAWCORE_CSV`, that reads the column names from the header row, treats empty fields and the text `n/a` as NULL, and trims extra spaces.
+> 5. Use `INFER_SCHEMA` on the staged file to work out the columns and types, show me the result, then create the table from it. Dates should load as `DATE`. `ticket_id` and `firmware_version` should stay text, because versions like 1.8.2 aren't numbers.
+> 6. Load the data with `COPY INTO`, matching columns by name, and stop on the first error.
+> 7. Verify the load: total rows (expect 356), rows where `resolved_date` is NULL (expect 129), rows where `firmware_version` is NULL (expect 100), the distinct regions (expect 3), and the result in `COPY_HISTORY`.
+>
+> Rules: show me each SQL statement and wait for my approval before you run it. Only create objects inside `PAWCORE_ANALYTICS`. Don't drop or replace anything. If the table already exists, stop and ask me what to do.
+
+If a check doesn't match, ask CoCo why before you move on. Common causes: no active warehouse, a role that can't create the database, or a table left over from an earlier run.
 
 ### Columns
 
